@@ -20,10 +20,6 @@ To write pages and see your results live, there are some prerequisites:
 - You need to know how to enter commands in the terminal or a command prompt
 - You need to know how to use Git and make a pull request. If you are new to Git and GitHub, you can read this guide to get started: [Beginner’s guide to GitHub: Creating a pull request](https://github.blog/developer-skills/github/beginners-guide-to-github-creating-a-pull-request/)
 
-Before you start, you should know that having an SSH key set up in your GitHub account and on your computer will make things a less repetitive because you don't have to enter a password every time you push changes to GitHub. If you are just getting started, you can just follow this guide with the given HTTPS URLs and everything will work. Later you can set up an SSH key though.
-
-If you use SSH, replace all HTTPS URLs here with the SSH equivalent.
-
 Now follow these steps:
 
 1. Create a fork of this repository by clicking "Fork" at the top of the [page](https://github.com/music-presence/documentation). You may want to rename the forked repository from `documentation` to e.g. `musicpresence-documentation` (optional)
@@ -33,7 +29,7 @@ Now follow these steps:
 5. A prompt should appear to open the repository, confirm this to open it
 6. Click "Yes, I trust the authors", if you trust the code in the repository. You don't necessarily have to do this because you will just be writing text, but the editor won't give e.g. code suggestions, if you don't trust the folder
 
-You have created a fork and you are now ready to edit some pages!
+You have created a fork, you cloned it and you are now ready to edit some pages!
 
 Follow these steps to set up live preview:
 
@@ -57,6 +53,12 @@ Guidance on making changes and creating new pages:
 - In VSCodium (or VS Code) you can search for pages using text content by pressing CTRL+SHIFT+F or opening the search in the side bar of the editor window
 - All pages are written in Markdown and use [Markdown syntax](https://www.markdownguide.org/cheat-sheet)
 - The project uses Zensical for page generation. Read the documentation to find extensive information on how to author pages: https://zensical.org/docs/authoring/markdown
+
+For instructions on how to commit your changes and make a pull request so your edits can make it to the live documentation site, read the [Beginner’s guide to GitHub: Creating a pull request](https://github.blog/developer-skills/github/beginners-guide-to-github-creating-a-pull-request/).
+
+Note that whenever you push changes to your forked repository, you will have to enter your password, if you cloned with an HTTPS url. Having an SSH key set up in your GitHub account and on your computer allows you to not have to enter your password anymore. Read more here:
+- [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ### Getting help
 
