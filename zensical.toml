@@ -2,7 +2,7 @@
 site_name = "Music Presence"
 site_description = "Resources and documentation for the Music Presence app."
 site_author = "Jonas van den Berg"
-site_url = "https://musicpresence.app/docs"
+site_url = "https://docs.musicpresence.app"
 copyright = """
 Copyright &copy; 2024<span style="margin: 0 0.05rem">-</span>2026 Jonas van den Berg
 """
@@ -10,6 +10,9 @@ repo_name = "ungive/discord-music-presence"
 repo_url = "https://github.com/ungive/discord-music-presence"
 extra_css = ["_static/styles/extra.css"]
 nav = [
+    {"Home" = [
+        "index.md",
+    ]},
     {"Legal" = [
         "legal/index.md",
         "legal/privacy-policy.md",
