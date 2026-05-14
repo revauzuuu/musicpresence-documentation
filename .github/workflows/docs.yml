@@ -23,7 +23,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: zensical build --clean
         env:
-          PRIVACY_CONTACT_EMAIL: ${{ env.PRIVACY_CONTACT_EMAIL }}
+          PRIVACY_CONTACT_EMAIL: ${{ vars.PRIVACY_CONTACT_EMAIL }}
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
