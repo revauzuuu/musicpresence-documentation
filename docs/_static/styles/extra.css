@@ -1,0 +1,26 @@
+/* https://github.com/squidfunk/mkdocs-material/discussions/2729 */
+[data-md-color-scheme="slate"] #logo {
+  content: url("../images/logo-dark.png");
+}
+[data-md-color-scheme="default"] #logo {
+  content: url("../images/logo-light.png");
+}
+
+/* Music Presence homepage background color. */
+:root > [data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0e0d0f;
+}
+
+[data-md-component="header"] > .md-grid {
+  padding-right: 1.5rem;
+}
+[data-md-component="sidebar"][data-md-type="navigation"] {
+  width: 12.5rem;
+}
+[data-md-component="sidebar"][data-md-type="toc"] {
+  width: 13rem;
+  /* margin-right: -1rem; */
+}
+[data-md-component="logo"] {
+  translate: -0.15rem 0;
+}

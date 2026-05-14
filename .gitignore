@@ -1,0 +1,8 @@
+.cache
+.venv
+venv
+notes
+*.example.toml
+site
+todo.txt
+.vscode
