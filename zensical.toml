@@ -15,6 +15,7 @@ nav = [
     ]},
     {"Legal" = [
         "legal/index.md",
+        "legal/privacy-policy.md",
     ]},
 ]
 
@@ -60,6 +61,10 @@ toc_depth = 3
 
 [project.extra]
 generator = false
+
+[project.markdown_extensions.zensical.extensions.macros]
+render_by_default = true
+module_name = "macros"
 
 # Stuff from the default configuration, needs to be added manually right now:
 # https://zensical.org/docs/setup/extensions/#default-configuration

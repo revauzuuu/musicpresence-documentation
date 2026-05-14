@@ -6,3 +6,6 @@ notes
 site
 todo.txt
 .vscode
+*.env
+!*.env.example
+__pycache__
