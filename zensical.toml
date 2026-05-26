@@ -17,6 +17,7 @@ nav = [
         "legal/index.md",
         {"Documents" = [
             "legal/license-agreement.md",
+            "legal/scrobbling-license-terms.md",
             "legal/privacy-policy.md",
         ]},
     ]},
