@@ -21,8 +21,6 @@ Effective date: Not effective. You can always find the currently effective versi
 
 Welcome to the Music Presence Privacy Policy. This is where we describe how we handle your data, which is data that is collected when you use our Services and information that is directly linked or can be linked to you. It applies to the data that we process when you interact with websites, applications and services listed in section [2. Scope](#2-scope).
 
-For older revisions of our Policies and Policies that were in effect for older versions of Music Presence, refer to the [Legal Document Archive](./archive.md).
-
 ## 1. Definitions
 
 In this Policy, the following terms have the meanings this section ascribes those terms:
