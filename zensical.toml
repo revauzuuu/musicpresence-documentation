@@ -15,7 +15,9 @@ nav = [
     ]},
     {"Legal" = [
         "legal/index.md",
-        "legal/privacy-policy.md",
+        {"Documents" = [
+            "legal/privacy-policy.md",
+        ]},
     ]},
 ]
 
