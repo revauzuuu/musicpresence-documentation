@@ -296,17 +296,15 @@ After you submitted this data, we process some or all of it to provide the funct
 
 ### 4.5 Abuse Prevention
 
-The data that is collected while you use a purchased Scrobbling license within the Software ("Scrobbling License Abuse Prevention Data") is sent to our servers and stored for a period of up to 90 days to prevent sharing of personal Scrobbling licenses with other individuals and to enforce the limitations of a purchased Scrobbling license as described in the [Scrobbling License Terms](./scrobbling-license-terms.md).
+The data that is collected while you use a purchased Scrobbling license within the Software ("Scrobbling License Abuse Prevention Data") is sent to our servers and stored for a period of up to 90 days to prevent sharing of personal Scrobbling licenses with other individuals and to enforce the limitations of a purchased Scrobbling license as described in the [Scrobbling License Terms](./scrobbling-license-terms.md). This data is only used to prevent abuse and for no other purposes. It is deleted after the 90-day period.
 
 None of this data is readable to us. All Scrobbling License Abuse Prevention Data is securely [pseudonymized](https://en.wikipedia.org/wiki/Pseudonymization) by hashing it with the [HMAC-SHA256](https://en.wikipedia.org/wiki/HMAC) cryptographic one-way hash function where at least 256 bits of the private secret in your Scrobbling license file are used as key material. This key is never persistently stored on our servers which makes it cryptographically infeasible for us to know which Scrobbling services and accounts you use. This is by design. See section [5.3 License File Contents](./scrobbling-license-terms.md#53-license-file-contents) of the [Scrobbling License Terms](./scrobbling-license-terms.md) for more information.
 
 From a non-technical perspective this Scrobbling License Abuse Prevention Data gives us insight only into the following information:
 
-- How many different Scrobbling accounts you use per Scrobbling service/target across all devices on which you use your Scrobbling license, e.g. whether you use just 1 Last.fm account or 2 Last.fm accounts, without us knowing which specific accounts
+- How many different Scrobbling accounts you use per Scrobbling target type across all devices on which you use your Scrobbling license, e.g. whether you use one or more than one account of a Scrobbling service, without us knowing which specific service you use and without us gaining knowledge about any account names
 
-We only store Scrobbling License Abuse Prevention Data for a duration of at most 90 days after which it is deleted. This data is only used to prevent abuse and for no other purposes.
-
-The data that is collected at the time of starting a Scrobbling free trial within the Software ("Scrobbling Free Trial Abuse Prevention Data") is sent to our servers and stored for a period of up to 365 days to ensure that you cannot start another free trial now or in the near future and to enforce the limitations of the Scrobbling free trial as described in the [Scrobbling License Terms](./scrobbling-license-terms.md).
+The data that is collected when you start a Scrobbling free trial within the Software ("Scrobbling Free Trial Abuse Prevention Data") is sent to our servers and stored for a period of up to 365 days to ensure that you cannot start another free trial now or in the near future and to enforce the limitations of the Scrobbling free trial as described in the [Scrobbling License Terms](./scrobbling-license-terms.md).
 
 Unlike Scrobbling License Abuse Prevention Data, Scrobbling Free Trial Abuse Prevention Data cannot be pseudonymized in the same way because there is no private secret or other key material available during the free trial that is guaranteed to be available for the same individual across all devices on which the Software is used.
 
