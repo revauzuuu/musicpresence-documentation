@@ -6,4 +6,4 @@ load_dotenv()
 
 
 def define_env(env):
-    env.variables["privacy_contact_email"] = os.getenv('PRIVACY_CONTACT_EMAIL', "privacy@example.com")
+    env.variables["contact_email"] = os.getenv('CONTACT_EMAIL', "contact@example.com")

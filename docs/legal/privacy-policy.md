@@ -482,7 +482,7 @@ All data that is sent over the network is encrypted with the use of modern and s
 
 ## 7. Data Controller
 
-Music Presence and our other Services are operated by Jonas van den Berg, the data controller ("Controller"). The Controller decides why and how your personal data is handled by us when you use the Software and our Services. Jonas van den Berg is responsible for handling your data in line with the applicable data protection rules. For data protection enquiries, please contact us at {{ privacy_contact_email }}.
+Music Presence and our other Services are operated by Jonas van den Berg, the data controller ("Controller"). The Controller decides why and how your personal data is handled by us when you use the Software and our Services. Jonas van den Berg is responsible for handling your data in line with the applicable data protection rules. For data protection enquiries, please contact us at {{ contact_email }}.
 
 ## 8. Your Privacy Rights
 
@@ -496,7 +496,7 @@ Depending on your residence location, you may have specific legal rights regardi
 - The right to withdraw consent, where processing is based on your consent
 - The right to receive your collected Personal Data in a structured, commonly used, and machine-readable format to facilitate its transfer to another company, where technically feasible
 
-To exercise these rights, please send an email to {{ privacy_contact_email }}. To verify your identity for security, we may request extra information before addressing your data-related request. Please [contact us](#11-contact) for any feedback or concerns. Depending on your region, you have the right to complain to your local Data Protection Authority. European users can find authority contacts on the European Data Protection Board website, and UK users on the Information Commissioner’s Office website.
+To exercise these rights, please send an email to {{ contact_email }}. To verify your identity for security, we may request extra information before addressing your data-related request. Please [contact us](#11-contact) for any feedback or concerns. Depending on your region, you have the right to complain to your local Data Protection Authority. European users can find authority contacts on the European Data Protection Board website, and UK users on the Information Commissioner’s Office website.
 
 We aim to promptly respond to requests in compliance with legal requirements. Please note that we may retain certain data as necessary for legal obligations or for establishing, exercising, or defending legal claims.
 
@@ -517,4 +517,4 @@ Last updated on 14 May 2026.
 
 ## 11. Contact
 
-Music Presence and our other Services are operated by Jonas van den Berg. For data protection enquiries for further questions regarding this Privacy Policy contact us at {{ privacy_contact_email }}.
+Music Presence and our other Services are operated by Jonas van den Berg. For data protection enquiries or further questions regarding this Privacy Policy contact us at {{ contact_email }}.
