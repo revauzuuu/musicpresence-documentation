@@ -1,0 +1,22 @@
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            {% include "partials/copyright.html" %}
+
+            <!-- Footer links -->
+            <!-- NOTE Local links should end in a trailing slash for instant navigation to work. -->
+            {% if config.extra.footer_links %}
+            <div class="md-copyright md-content footer-links-container">
+            {% for link in config.extra.footer_links %}
+                <a href="{{ link.url }}" {% if link.target %}target="{{ link.target }}"{% endif %}>{{ link.title }}</a>
+            {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Social links -->
+            {% if config.extra.social %}
+            {% include "partials/social.html" %}
+            {% endif %}
+        </div>
+    </div>
+</footer>

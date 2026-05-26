@@ -24,3 +24,8 @@
 [data-md-component="logo"] {
   translate: -0.15rem 0;
 }
+
+/* Page CSS. */
+.footer-links-container a:not(:first-of-type) {
+  margin-left: .3rem;
+}

@@ -37,6 +37,28 @@ features = [
 [project.theme.icon]
 repo = "fontawesome/brands/github"
 
+[[project.extra.footer_links]]
+title="Music Presence"
+url="https://musicpresence.app"
+target="_blank"
+
+[[project.extra.footer_links]]
+title="Documentation"
+url="/"
+
+[[project.extra.footer_links]]
+title="Legal"
+url="/legal/"
+
+[[project.extra.footer_links]]
+title="Privacy Policy"
+url="/legal/privacy-policy/"
+
+[[project.extra.footer_links]]
+title="Impressum"
+url="https://jonasvandenberg.de/impressum"
+target="_blank"
+
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
 toggle.icon = "lucide/sun-moon"
