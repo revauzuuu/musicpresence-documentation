@@ -9,6 +9,7 @@ On this page you can find all terms and policies that govern your use of the Mus
 
 ## Documents
 
+- [**License Agreement**](./license-agreement.md): This document contains a copy of the License Agreement for the Music Presence desktop application that you also received when you downloaded the software. You are bound by the terms in this License Agreement when you install or use the Music Presence desktop application.
 - [**Privacy Policy**](./privacy-policy.md): In this document we outline what data is collected when you use the Music Presence app or any of our websites and other services that are relevant to Music Presence. It also contains information on how we handle your data, how your data is used and information on how to exercise your rights.
 
 ## Disclaimer
