@@ -28,8 +28,9 @@ favicon = "_static/images/favicon.ico"
 custom_dir = "overrides"
 features = [
     "navigation.instant",
-    "navigation.tabs",
+    "navigation.path",
     "navigation.sections",
+    "navigation.tabs",
     "toc.follow",
 ]
 
