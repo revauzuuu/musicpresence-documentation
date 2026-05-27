@@ -99,9 +99,9 @@
 .md-footer .md-copyright {
   padding: 0;
 }
-/* body > .md-container {
-  min-height: 100vh;
-} */
+body > .md-container {
+  min-height: calc(100vh - .5em);
+}
 
 /* @media screen and (min-width: 1em) {
   html {
