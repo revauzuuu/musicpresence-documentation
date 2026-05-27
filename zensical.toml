@@ -29,6 +29,7 @@ variant = "modern"
 favicon = "_static/images/favicon.ico"
 custom_dir = "overrides"
 features = [
+    "navigation.footer",
     "navigation.instant",
     "navigation.path",
     "navigation.sections",
