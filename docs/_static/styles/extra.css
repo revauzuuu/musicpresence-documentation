@@ -100,7 +100,7 @@
   padding: 0;
 }
 body > .md-container {
-  min-height: calc(100vh - .5em);
+  min-height: calc(100vh - .5em - .25em);
 }
 
 /* @media screen and (min-width: 1em) {
@@ -112,4 +112,8 @@ body > .md-container {
 .md-typeset pre {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+.md-header {
+  margin-top: .25em;
 }
