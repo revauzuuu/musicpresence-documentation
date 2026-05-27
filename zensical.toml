@@ -37,6 +37,7 @@ features = [
     "navigation.sections",
     "navigation.tabs",
     "toc.follow",
+    "search.highlight",
 ]
 
 [project.theme.icon]
