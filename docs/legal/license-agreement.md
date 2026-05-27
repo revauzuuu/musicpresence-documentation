@@ -21,8 +21,6 @@ Please read this License Agreement ("License") carefully before installing or us
 
 This is the License for version 2.3.5 of the Software and that version only.
 
----
-
 ```
 Music Presence
 

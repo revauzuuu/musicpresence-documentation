@@ -108,3 +108,8 @@
     font-size: 150% !important;
   }
 } */
+
+.md-typeset pre {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
