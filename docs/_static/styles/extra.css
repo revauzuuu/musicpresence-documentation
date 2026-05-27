@@ -86,12 +86,18 @@
 .md-footer {
   margin-top: 8em;
 }
+.md-footer-meta {
+  padding: .5em;
+}
 .md-footer-meta__inner {
   padding-top: 0;
   padding-bottom: .25em;
 }
 .footer-links-container a:not(:first-of-type) {
   margin-left: .3rem;
+}
+.md-footer .md-copyright {
+  padding: 0;
 }
 /* body > .md-container {
   min-height: 100vh;

@@ -7,9 +7,9 @@
             <!-- NOTE Local links should end in a trailing slash for instant navigation to work. -->
             {% if config.extra.footer_links %}
             <div class="md-copyright md-content footer-links-container">
-            {% for link in config.extra.footer_links %}
-                <a href="{{ link.url }}" {% if link.target %}target="{{ link.target }}"{% endif %}>{{ link.title }}</a>
-            {% endfor %}
+                {% for link in config.extra.footer_links %}
+                <a href="{{ link.url }}" {% if link.target %}target="{{ link.target }}" {% endif %}>{{ link.title }}</a>
+                {% endfor %}
             </div>
             {% endif %}
 
