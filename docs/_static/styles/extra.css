@@ -14,7 +14,7 @@
 [data-md-color-scheme="default"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link:hover {
   color: black;
 }
-[data-md-color-scheme="default"] .md-main .md-content a:hover {
+[data-md-color-scheme="default"] .md-main .md-content a:not(.md-content__button):hover {
   color: #758ed4;
 }
 [data-md-color-scheme="default"] .md-main .md-content a.headerlink {
@@ -36,7 +36,7 @@
 [data-md-color-scheme="slate"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link:hover {
   color: white;
 }
-[data-md-color-scheme="slate"] .md-main .md-content a:hover {
+[data-md-color-scheme="slate"] .md-main .md-content a:not(.md-content__button):hover {
   color: #d3e7ff;
 }
 [data-md-color-scheme="slate"] .md-main .md-content a.headerlink {

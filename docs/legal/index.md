@@ -3,6 +3,13 @@ title: Overview
 icon: lucide/book-open
 ---
 
+<!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->
+<style>
+.md-content__button {
+    display: none;
+}
+</style>
+
 # Policies
 
 On this page you can find all terms and policies that govern your use of the Music Presence app and its websites and services. Navigate the sidebar on the left or click on a link below to open the respective document.

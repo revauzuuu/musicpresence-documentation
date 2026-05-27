@@ -3,6 +3,13 @@ title: Privacy Policy
 icon: lucide/user-lock
 ---
 
+<!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->
+<style>
+.md-content__button {
+    display: none;
+}
+</style>
+
 <!--
 
 Instructions on updating this Privacy Policy:

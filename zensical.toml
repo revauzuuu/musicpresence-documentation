@@ -8,6 +8,7 @@ Copyright &copy; 2024<span style="margin: 0 0.05rem">-</span>2026 Jonas van den 
 """
 repo_name = "ungive/discord-music-presence"
 repo_url = "https://github.com/ungive/discord-music-presence"
+edit_uri = "https://github.com/music-presence/documentation/edit/main/docs/"
 extra_css = ["_static/styles/extra.css"]
 nav = [
     {"Home" = [
@@ -29,6 +30,7 @@ variant = "modern"
 favicon = "_static/images/favicon.ico"
 custom_dir = "overrides"
 features = [
+    "content.action.edit",
     "navigation.footer",
     "navigation.instant",
     "navigation.path",

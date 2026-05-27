@@ -3,6 +3,13 @@ title: Scrobbling License Terms
 icon: lucide/scale
 ---
 
+<!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->
+<style>
+.md-content__button {
+    display: none;
+}
+</style>
+
 # Scrobbling License Terms
 
 Effective date: Not effective.

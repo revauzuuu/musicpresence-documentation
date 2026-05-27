@@ -4,6 +4,13 @@ icon: lucide/scroll-text
 url: license
 ---
 
+<!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->
+<style>
+.md-content__button {
+    display: none;
+}
+</style>
+
 <!-- AUTOMATICALLY GENERATED! DO NOT EDIT! -->
 
 <!-- TODO Automatically import from ungive/discord-music-presence. -->
