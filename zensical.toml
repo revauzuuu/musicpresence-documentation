@@ -36,6 +36,7 @@ features = [
     "navigation.path",
     "navigation.sections",
     "navigation.tabs",
+    "navigation.indexes",
     "toc.follow",
     "search.highlight",
 ]
