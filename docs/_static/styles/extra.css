@@ -1,14 +1,57 @@
+/* Music Presence homepage background color. */
+:root > [data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0e0d0f;
+}
+
+:root > [data-md-color-scheme="default"] {
+  --md-accent-fg-color: #415a4d;
+  --md-accent-fg-color--transparent: #84b99c44;
+  --md-primary-fg-color: #456cd7;
+}
+[data-md-color-scheme="default"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link--active {
+  color: black;
+}
+[data-md-color-scheme="default"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link:hover {
+  color: black;
+}
+[data-md-color-scheme="default"] .md-main .md-content a:hover {
+  color: #758ed4;
+}
+[data-md-color-scheme="default"] .md-main .md-content a.headerlink {
+  color: inherit;
+}
+[data-md-color-scheme="default"] .md-footer a:hover {
+  color: #555;
+}
+
+:root > [data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #8acba7;
+  --md-accent-fg-color--transparent: #57957333;
+  --md-primary-fg-color: #9fb9ff;
+  --md-code-bg-color: #1b1b1b;
+}
+[data-md-color-scheme="slate"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link--active {
+  color: white;
+}
+[data-md-color-scheme="slate"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link:hover {
+  color: white;
+}
+[data-md-color-scheme="slate"] .md-main .md-content a:hover {
+  color: #d3e7ff;
+}
+[data-md-color-scheme="slate"] .md-main .md-content a.headerlink {
+  color: inherit;
+}
+[data-md-color-scheme="slate"] .md-footer a:hover {
+  color: #ddd;
+}
+
 /* https://github.com/squidfunk/mkdocs-material/discussions/2729 */
 [data-md-color-scheme="slate"] #logo {
   content: url("../images/logo-dark.png");
 }
 [data-md-color-scheme="default"] #logo {
   content: url("../images/logo-light.png");
-}
-
-/* Music Presence homepage background color. */
-:root > [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #0e0d0f;
 }
 
 [data-md-component="header"] > .md-grid {
@@ -25,9 +68,23 @@
   translate: -0.15rem 0;
 }
 
+/* @media screen and (min-width: 76.2344em) {
+  .md-header__inner {
+    padding-left: 1.8em;
+  }
+} */
+
+.md-header__title {
+  margin-left: 0.1em;
+}
+
+
 /* Page CSS. */
 .md-footer, .md-copyright {
   font-size: 10pt !important;
+}
+.md-footer {
+  margin-top: 8em;
 }
 .md-footer-meta__inner {
   padding-top: 0;
@@ -38,4 +95,10 @@
 }
 /* body > .md-container {
   min-height: 100vh;
+} */
+
+/* @media screen and (min-width: 1em) {
+  html {
+    font-size: 150% !important;
+  }
 } */
