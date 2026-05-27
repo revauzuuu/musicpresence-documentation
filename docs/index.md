@@ -2,7 +2,6 @@
 title: Documentation
 icon: lucide/house
 hide:
-    - navigation
     - toc
 ---
 

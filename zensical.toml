@@ -11,8 +11,30 @@ repo_url = "https://github.com/ungive/discord-music-presence"
 edit_uri = "https://github.com/music-presence/documentation/edit/main/docs/"
 extra_css = ["_static/styles/extra.css"]
 nav = [
-    {"Home" = [
+    {"Documentation" = [
         "index.md",
+        {"Setup" = [
+            "setup/installation.md",
+            "setup/discord-settings.md",
+            "setup/media-player-setup.md",
+            "setup/browser-support.md",
+        ]},
+        {"Usage" = [
+            "usage/player-controls.md",
+            "usage/customization.md",
+            "usage/album-covers.md",
+            "usage/animated-album-covers.md",
+            "usage/music-apis.md",
+        ]},
+    ]},
+    {"Troubleshooting" = [
+        "troubleshooting.md"
+    ]},
+    {"FAQ" = [
+        "faq.md"
+    ]},
+    {"Contributing" = [
+        "contributing.md"
     ]},
     {"Legal" = [
         "legal/index.md",
