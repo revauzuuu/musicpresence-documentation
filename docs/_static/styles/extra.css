@@ -26,6 +26,9 @@
 }
 
 /* Page CSS. */
+.md-footer, .md-copyright {
+  font-size: 10.5pt;
+}
 .footer-links-container a:not(:first-of-type) {
   margin-left: .3rem;
 }
