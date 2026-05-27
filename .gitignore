@@ -9,3 +9,4 @@ todo.txt
 *.env
 !*.env.example
 __pycache__
+docs/_legacy
