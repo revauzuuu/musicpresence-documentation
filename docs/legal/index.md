@@ -1,6 +1,8 @@
 ---
 title: Overview
 icon: lucide/book-open
+hide:
+    - footer
 ---
 
 <!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->

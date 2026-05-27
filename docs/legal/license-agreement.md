@@ -2,6 +2,8 @@
 title: License Agreement
 icon: lucide/scroll-text
 url: license
+hide:
+    - footer
 ---
 
 <!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->
