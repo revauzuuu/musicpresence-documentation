@@ -1,6 +1,7 @@
 /* Music Presence homepage background color. */
 :root > [data-md-color-scheme="slate"] {
   --md-default-bg-color: #0e0d0f;
+  --md-default-bg-color--light: #0e0d0f;
 }
 
 :root > [data-md-color-scheme="default"] {
