@@ -23,7 +23,6 @@ nav = [
             "usage/player-controls.md",
             "usage/customization.md",
             "usage/album-covers.md",
-            "usage/animated-album-covers.md",
             "usage/music-apis.md",
         ]},
     ]},
