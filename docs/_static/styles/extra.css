@@ -60,6 +60,11 @@
 [data-md-component="sidebar"][data-md-type="navigation"] {
   width: 12.5rem;
 }
+@supports selector(::-webkit-scrollbar) {
+  [dir=ltr] .md-sidebar__inner {
+    padding-right: calc(100% - 12.5rem);
+  }
+}
 [data-md-component="sidebar"][data-md-type="toc"] {
   width: 13rem;
   /* margin-right: -1rem; */
