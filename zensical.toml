@@ -121,7 +121,7 @@ accent = "custom"
 
 [project.markdown_extensions.toc]
 permalink = true
-toc_depth = 3
+toc_depth = 4
 
 [project.extra]
 generator = false
