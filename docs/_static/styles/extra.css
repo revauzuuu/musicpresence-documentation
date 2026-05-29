@@ -1,3 +1,31 @@
+/* Fonts (not using automatic Google Fonts). */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200 1000;
+  src: local('Nunito'),
+    url('/_static/fonts/Nunito/Nunito-VariableFont_wght.ttf') format("truetype");
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local('Inter'),
+    url('/_static/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format("truetype");
+}
+:root > [data-md-color-scheme] {
+  --md-text-font-family: "Inter";
+}
+.md-header__title {
+  font-family: "Nunito", sans-serif;
+  /* Slightly increased font size, due to Nunito rendering rather small. */
+  font-size: 15.25pt;
+}
+#app-download-buttons {
+  font-family: "Nunito", sans-serif;
+}
+
 /* Music Presence homepage background color. */
 :root > [data-md-color-scheme="slate"] {
   --md-default-bg-color: #0e0d0f;

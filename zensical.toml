@@ -60,6 +60,7 @@ language = "en"
 variant = "modern"
 favicon = "_static/images/favicon.ico"
 custom_dir = "overrides"
+font = false
 features = [
     "content.action.edit",
     "navigation.footer",
