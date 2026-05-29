@@ -1,0 +1,10 @@
+<div id="app-download-buttons" style="max-width: 800px">
+{% with %}{% set name="Windows" %}{% set type="Installer" %}{% set arch="x64" %}{% set icon="windows" %}{% set url=download_urls.win_x64_installer %}{% include "download-button.html" %}{% endwith %}
+{% with %}{% set name="Windows" %}{% set type="zip" %}{% set arch="x64" %}{% set icon="windows" %}{% set url=download_urls.win_x64_zip %}{% include "download-button.html" %}{% endwith %}
+{% with %}{% set name="Mac" %}{% set type="Apple Silicon" %}{% set icon="apple" %}{% set url=download_urls.mac_arm64_dmg %}{% include "download-button.html" %}{% endwith %}
+{% with %}{% set name="Mac" %}{% set type="Intel" %}{% set arch="x86_64" %}{% set icon="apple" %}{% set url=download_urls.mac_x86_64_dmg %}{% include "download-button.html" %}{% endwith %}
+{% with %}{% set name="Linux" %}{% set type="AppImage" %}{% set arch="x86_64" %}{% set icon="linux" %}{% set url=download_urls.linux_x86_64_appimage %}{% include "download-button.html" %}{% endwith %}
+{% with %}{% set name="Linux" %}{% set type="deb" %}{% set arch="x86_64" %}{% set icon="linux" %}{% set url=download_urls.linux_x86_64_deb %}{% include "download-button.html" %}{% endwith %}
+{% with %}{% set name="Linux" %}{% set type="rpm" %}{% set arch="x86_64" %}{% set icon="linux" %}{% set url=download_urls.linux_x86_64_rpm %}{% include "download-button.html" %}{% endwith %}
+{% with %}{% set name="Linux" %}{% set type="tar.gz" %}{% set arch="x86_64" %}{% set icon="linux" %}{% set url=download_urls.linux_x86_64_targz %}{% include "download-button.html" %}{% endwith %}
+</div>

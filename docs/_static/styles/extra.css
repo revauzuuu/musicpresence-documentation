@@ -32,6 +32,7 @@
   --md-default-bg-color--light: #0e0d0f;
 }
 
+/* [Zensical] Various color scheme fixes (light mode). */
 :root > [data-md-color-scheme="default"] {
   --md-accent-fg-color: #415a4d;
   --md-accent-fg-color--transparent: #84b99c44;
@@ -40,10 +41,17 @@
 [data-md-color-scheme="default"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link--active {
   color: black;
 }
-[data-md-color-scheme="default"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link:hover {
+[data-md-color-scheme="default"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link.md-nav__link--passed:hover {
   color: black;
 }
-[data-md-color-scheme="default"] .md-main .md-content a:not(.md-content__button):hover {
+[data-md-color-scheme="default"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link:not(.md-nav__link--passed):hover {
+  color: black;
+  font-weight: 450;
+}
+[data-md-color-scheme="default"] .md-content .md-path .md-path__link:hover {
+  color: black;
+}
+[data-md-color-scheme="default"] .md-main .md-content a:not(.md-content__button):not([href^="#__tabbed"]):not(.md-path__link):hover {
   color: #758ed4;
 }
 [data-md-color-scheme="default"] .md-main .md-content a.headerlink {
@@ -52,7 +60,30 @@
 [data-md-color-scheme="default"] .md-footer a:hover {
   color: #555;
 }
+[data-md-color-scheme="default"] div.tabbed-set {
+  border: 1px solid #e7e7e7;
+}
+[data-md-color-scheme="default"] div.tabbed-set .tabbed-labels {
+  background-color: #f9f9f9;
+}
+[data-md-color-scheme="default"] div.tabbed-set .tabbed-content {
+  background-color: #fdfdfd;
+}
+/* Somehow the tabbed color is the accent color sometimes. */
+:root > [data-md-color-scheme="default"] div.tabbed-set label {
+  --md-default-fg-color: #222;
+}
+/* Render download links and subtle links differently from page links. */
+[data-md-color-scheme="default"] a[href^="https://github.com/ungive/discord-music-presence/releases/download"],
+[data-md-color-scheme="default"] a.subtle-link {
+  color: #222;
+}
+[data-md-color-scheme="default"] a[href^="https://github.com/ungive/discord-music-presence/releases/download"]:hover,
+[data-md-color-scheme="default"] a.subtle-link:hover {
+  color: #000 !important;
+}
 
+/* [Zensical] Various color scheme fixes (dark mode). */
 :root > [data-md-color-scheme="slate"] {
   --md-accent-fg-color: #8acba7;
   --md-accent-fg-color--transparent: #57957333;
@@ -65,7 +96,13 @@
 [data-md-color-scheme="slate"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link:hover {
   color: white;
 }
-[data-md-color-scheme="slate"] .md-main .md-content a:not(.md-content__button):hover {
+[data-md-color-scheme="slate"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link:hover {
+  color: white;
+}
+[data-md-color-scheme="slate"] .md-content .md-path .md-path__link:hover {
+  color: white;
+}
+[data-md-color-scheme="slate"] .md-main .md-content a:not(.md-content__button):not([href^="#__tabbed"]):not(.md-path__link):hover {
   color: #d3e7ff;
 }
 [data-md-color-scheme="slate"] .md-main .md-content a.headerlink {
@@ -74,7 +111,27 @@
 [data-md-color-scheme="slate"] .md-footer a:hover {
   color: #ddd;
 }
+[data-md-color-scheme="slate"] div.tabbed-set .tabbed-labels {
+  background-color: #222;
+}
+[data-md-color-scheme="slate"] div.tabbed-set .tabbed-content {
+  background-color: #1b1b1b;
+}
+/* Somehow the tabbed color is the accent color sometimes. */
+:root > [data-md-color-scheme="slate"] div.tabbed-set * {
+  --md-default-fg-color: #ddd !important;
+}
+/* Render download links and subtle links differently from page links. */
+[data-md-color-scheme="slate"] a[href^="https://github.com/ungive/discord-music-presence/releases/download"],
+[data-md-color-scheme="slate"] a.subtle-link {
+  color: #ddd;
+}
+[data-md-color-scheme="slate"] a[href^="https://github.com/ungive/discord-music-presence/releases/download"]:hover,
+[data-md-color-scheme="slate"] a.subtle-link:hover {
+  color: #fff !important;
+}
 
+/* Custom logo with light and dark variants. */
 /* https://github.com/squidfunk/mkdocs-material/discussions/2729 */
 [data-md-color-scheme="slate"] #logo {
   content: url("../images/logo-dark.png");
@@ -83,9 +140,12 @@
   content: url("../images/logo-light.png");
 }
 
+/* [Zensical] Fix alignment of the GitHub repository card. */
 [data-md-component="header"] > .md-grid {
   padding-right: 1.5rem;
 }
+
+/* [Zensical] Give text in the navigation sidebar a little more space so it does not wrap. */
 [data-md-component="sidebar"][data-md-type="navigation"] {
   width: 12.5rem;
 }
@@ -98,6 +158,8 @@
   width: 13rem;
   /* margin-right: -1rem; */
 }
+
+/* [Zensical] Move the logo a little to the left. */
 [data-md-component="logo"] {
   translate: -0.15rem 0;
 }
@@ -150,4 +212,162 @@ body > .md-container {
 
 .md-header {
   margin-top: .25em;
+}
+
+/* [Zensical] Make tabbed views more distinctive */
+div.tabbed-set {
+  border-radius: .4rem !important;
+}
+div.tabbed-set .tabbed-labels {
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+}
+div.tabbed-set .tabbed-content {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+/* Allow disabling any animations when auto-selecting tabbed labels. */
+.js .md-typeset .tabbed-set.no-animation .tabbed-labels::before {
+  transition: none;
+}
+
+/* Download button styling. */
+#app-download-buttons {
+  margin-bottom: -.75em;
+}
+.download-button-container {
+  display: inline-flex;
+  color: inherit !important;
+  text-decoration: none !important;
+  line-height: normal;
+  margin-right: .5em;
+  margin-bottom: .75em;
+}
+.download-button-container:hover,
+.download-button-container:visited,
+.download-button-container:active {
+  color: inherit;
+  text-decoration: none;
+}
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  width: 13em;
+  box-sizing: border-box;
+  padding: 0.6em 1em;
+  border-radius: 6pt;
+  gap: .75rem;
+}
+.download-button .text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.download-button .title,
+.download-button .subtitle {
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.download-button .title {
+  font-weight: 750;
+  font-size: 14.5pt;
+}
+.download-button .subtitle {
+  font-weight: 500;
+  font-size: 11.5pt;
+}
+.download-button .subtitle .small {
+  font-size: 9pt;
+}
+.download-button .icon {
+  width: 2.5em;
+  height: 2.5em;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.download-button .icon img,
+.download-button .icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.85;
+}
+.download-button {
+  background-color: #eff3fe;
+  color: black;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+.no-animation .download-button {
+  transition: none !important;
+}
+[data-md-color-scheme="default"] .download-button {
+  border: 2px solid #bacff8;
+}
+[data-md-color-scheme="default"] .download-button:hover {
+  background-color: #f4f6fc;
+  border-color: #9fb1d2;
+}
+[data-md-color-scheme="slate"] .download-button {
+  border: 2px solid #eff3fe;
+}
+[data-md-color-scheme="slate"] .download-button:hover {
+  background-color: white;
+  border-color: #6c6f78;
+}
+
+/* [Zensical] Remove the margin for tabbed content on mobile. */
+@media screen and (max-width: 44.9844em) {
+  .md-content__inner > .tabbed-set .tabbed-labels {
+    margin: 0;
+    max-width: 100vw;
+    scroll-padding-inline-start: 0;
+  }
+}
+
+/* [Zensical] Fix path caret not being very visible. */
+[data-md-color-scheme="slate"] .md-path__item:not(:first-child)::before {
+  background-color: hsla(var(--md-hue), 15%, 90%, 0.70);
+}
+[data-md-color-scheme="default"] .md-path__item:not(:first-child)::before {
+  background-color: #000000aa;
+}
+
+/* Tray screenshot styling. */
+[data-md-color-scheme="slate"] .tray-screenshot {
+  background-color: #333;
+}
+[data-md-color-scheme="default"] .tray-screenshot {
+  background-color: #eee;
+}
+.tray-screenshot {
+  border-radius: 1.25em;
+  padding: .5em;
+}
+
+/* Download heading styling. */
+.download-heading {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.download-heading span {
+  margin-right: .25em;
+}
+.download-heading a {
+  display: block;
+}
+.download-heading img {
+  display: block;
+  height: .9em;
+}
+
+[data-md-color-scheme="slate"] .light-only {
+  display: none !important;
+}
+[data-md-color-scheme="default"] .dark-only {
+  display: none !important;
 }

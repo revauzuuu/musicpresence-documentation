@@ -10,6 +10,7 @@ repo_name = "ungive/discord-music-presence"
 repo_url = "https://github.com/ungive/discord-music-presence"
 edit_uri = "https://github.com/music-presence/documentation/edit/main/docs/"
 extra_css = ["_static/styles/extra.css"]
+extra_javascript = ["_static/scripts/common.js"]
 nav = [
     {"Get started" = [
         "index.md",
@@ -129,6 +130,7 @@ generator = false
 [project.markdown_extensions.zensical.extensions.macros]
 render_by_default = true
 module_name = "macros"
+include_dir = "includes"
 
 # Stuff from the default configuration, needs to be added manually right now:
 # https://zensical.org/docs/setup/extensions/#default-configuration
@@ -147,6 +149,7 @@ generic = true
 [project.markdown_extensions.pymdownx.emoji]
 emoji_generator = "zensical.extensions.emoji.to_svg"
 emoji_index = "zensical.extensions.emoji.twemoji"
+options.custom_icons = ["overrides/.icons"]
 [project.markdown_extensions.pymdownx.highlight]
 anchor_linenums = true
 line_spans = "__span"

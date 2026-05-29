@@ -1,0 +1,11 @@
+<a class="download-button-container" href="{{ url }}">
+    <span class="download-button">
+        <span class="text">
+            <span class="title">{{ name }}</span>
+            <span class="subtitle">{{ type }} {% if arch %}<span class="small">{{ arch }}</span>{% endif %}</span>
+        </span>
+        <span class="icon twemoji">
+            {% include "icons/" ~ icon ~ ".svg" %}
+        </span>
+    </span>
+</a>
