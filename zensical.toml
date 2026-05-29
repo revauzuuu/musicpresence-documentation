@@ -30,6 +30,9 @@ nav = [
             "scrobbling/intro.md",
         ]},
     ]},
+    {"Supported Players" = [
+        "media-players.md"
+    ]},
     {"Troubleshooting" = [
         "troubleshooting.md"
     ]},
@@ -38,6 +41,9 @@ nav = [
     ]},
     {"Community" = [
         "community.md"
+    ]},
+    {"Changelog" = [
+        "changelog.md"
     ]},
     {"Legal" = [
         "legal/index.md",
