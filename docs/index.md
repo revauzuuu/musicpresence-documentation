@@ -1,6 +1,5 @@
 ---
 title: Documentation
-icon: lucide/house
 hide:
     - toc
 ---

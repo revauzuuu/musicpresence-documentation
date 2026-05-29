@@ -1,5 +1,5 @@
 ---
-title: Contributing
+title: Community
 hide:
     - navigation
     - toc
@@ -11,4 +11,6 @@ hide:
 !!! note "Content notes"
     - Translations
     - Open-source parts of the projects
+    - Link to the Discord server
+    - Donations
     - ...

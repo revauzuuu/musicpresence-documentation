@@ -1,6 +1,5 @@
 ---
 title: Overview
-icon: lucide/book-open
 hide:
     - footer
 ---

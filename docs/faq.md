@@ -18,6 +18,10 @@ hide:
 
 !!! warning "TODO"
 
+## Is the Windows ZIP fully standalone?
+
+!!! warning "TODO"
+
 ---
 
 !!! warning "TODO"
