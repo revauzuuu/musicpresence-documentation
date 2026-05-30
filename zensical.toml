@@ -109,6 +109,14 @@ title="Impressum"
 url="https://jonasvandenberg.de/impressum"
 target="_blank"
 
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/ungive/discord-music-presence"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/discord"
+link = "https://go.musicpresence.app/discord-invite"
+
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
 toggle.icon = "lucide/sun-moon"
