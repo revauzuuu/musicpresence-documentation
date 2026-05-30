@@ -1,21 +1,33 @@
 /* Fonts (not using automatic Google Fonts). */
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 200 1000;
-  src: local('Nunito'),
-    url('/_static/fonts/Nunito/Nunito-VariableFont_wght.ttf') format("truetype");
+  src: local("Nunito") format("truetype"),
+    url("/_static/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+    format("truetype");
 }
 @font-face {
   font-family: Inter;
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: local('Inter'),
-    url('/_static/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format("truetype");
+  src: local("Inter") format("truetype"),
+    url("/_static/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: local("JetBrains Mono") format("truetype"),
+    url("/_static/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf")
+    format("truetype");
 }
 :root > [data-md-color-scheme] {
-  --md-text-font-family: "Inter";
+  --md-text-font-family: "Inter", sans-serif;
+  --md-code-font-family: "JetBrains Mono", monospace;
 }
 .md-header__title {
   font-family: "Nunito", sans-serif;
