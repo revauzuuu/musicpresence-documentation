@@ -159,7 +159,7 @@ To be sure, you can always download the ZIP archive {{ downloads.win_x64_zip.mar
 
 ### Launching the Windows installer from the Firefox downloads
 
-On some Windows devices the app may fail to launch or experience subtle issues, if you launched the Windows installer directly from the downloads section in Firefox. I recommend that you open Windows Explorer first and then run the installer from there.
+On some Windows devices the app may fail to launch or experience subtle issues, if you launched the Windows installer directly from the downloads section in Firefox. To avoid any issues, it's best to open Windows Explorer first and then run the installer from there.
 
 ## Getting help
 
