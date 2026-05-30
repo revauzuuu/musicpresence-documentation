@@ -2,7 +2,6 @@
 title: App Interaction
 icon: lucide/mouse-pointer-click
 hide:
-    - toc
     - tags
 tags:
     - Setup
@@ -11,11 +10,9 @@ tags:
 # Interacting with the app
 
 !!! warning "TODO"
-    Explain how to interact with Music Presence while it's running.
+    Explain all the ways in which the user can interact with Music Presence while it's running (there are actually quite a few and it's worth documenting all the little details). There may also be additional controls like keybinds in the future (e.g. to like the current song on Last.fm).
 
     Contribution guide: https://github.com/music-presence/documentation#contributing
-
-    Show the table of contents, if it's helpful.
 
 !!! note "Content notes"
     - The app sits in the tray menu/menu bar/system tray (show screenshots)
@@ -23,6 +20,3 @@ tags:
     - Left-click opens the settings window (on Windows this has to be explicitly enabled)
     - The settings window can also be opened by launching the app a second time
     - Explain auto-start on Windows
-
-
-## Hello

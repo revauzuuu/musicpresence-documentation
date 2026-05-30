@@ -15,7 +15,6 @@ nav = [
         "index.md",
         {"Setup" = [
             "setup/installation.md",
-            "setup/interaction.md",
             "setup/discord-settings.md",
             "setup/media-player-setup.md",
         ]},
@@ -28,6 +27,9 @@ nav = [
         ]},
         {"Scrobbling" = [
             "scrobbling/intro.md",
+        ]},
+        {"Advanced" = [
+            "advanced/app-interaction.md",
         ]},
     ]},
     {"Supported Players" = [
