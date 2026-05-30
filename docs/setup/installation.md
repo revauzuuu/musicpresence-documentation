@@ -26,7 +26,7 @@ If you are unsure which file to download or what to do with it, read the followi
 
 === ":fontawesome-brands-windows: &ensp; Windows"
 
-    For most people [**Windows Installer x64**]({{ download_urls.win_x64_installer }}) is the right choice.
+    For most people {{ downloads.win_x64_installer.markdown.link }} is the right choice.
     
     1. Double-click the downloaded file and navigate through the installation steps
     2. Music Presence should automatically launch at the end of the installation process
@@ -35,15 +35,15 @@ If you are unsure which file to download or what to do with it, read the followi
 
     The installer automatically adds **Music Presence** to your start menu for easy access.
     
-    Alternatively, you can download the ZIP archive [**Windows zip x64**]({{ download_urls.win_x64_zip }}) instead. To run it, right-click and extract it, then double-click the **Music Presence** or **Music Presence.exe** file in the extracted folder. Note that the ZIP is [not fully standalone](../faq.md#is-the-windows-zip-fully-standalone) and there won't be any entry in the start menu like with the installer.
+    Alternatively, you can download the ZIP archive {{ downloads.win_x64_zip.markdown.link }} instead. To run it, right-click and extract it, then double-click the **Music Presence** or **Music Presence.exe** file in the extracted folder. Note that the ZIP is [not fully standalone](../faq.md#is-the-windows-zip-fully-standalone) and there won't be any entry in the start menu like with the installer.
 
 === ":fontawesome-brands-apple: &ensp; Mac"
 
     If you are unsure which download is the right one, click on the :fontawesome-brands-apple: Apple logo in the top-left corner of your screen and select "**About This Mac**".
 
-    In case it says **M1**, **M2** or similar under "Chip" or anywhere else in the window that opened, then you need to choose the [**Mac Apple Silicon**]({{ download_urls.mac_arm64_dmg }}) download.
+    In case it says **M1**, **M2** or similar under "Chip" or anywhere else in the window that opened, then you need to choose the {{ downloads.mac_arm64_dmg.markdown.link }} download.
 
-    If it says **Intel** under "Processor", then you have an older Intel Mac and you need to choose the [**Mac Intel x86_64**]({{ download_urls.mac_x86_64_dmg }}) download instead.
+    If it says **Intel** under "Processor", then you have an older Intel Mac and you need to choose the {{ downloads.mac_x86_64_dmg.markdown.link }} download instead.
 
     To install the app:
 
@@ -130,9 +130,9 @@ Simply click on "**More info**" and then on "**Run anyway**".
 
 ### The application is flagged by antivirus
 
-If the downloaded [**Windows Installer x64**]({{ download_urls.win_x64_installer }}) file is flagged by your antivirus, then this most likely a false-positive related to NSIS installers, see <a href="https://nsis.sourceforge.io/NSIS_False_Positives" target="_blank">NSIS False Positives</a>.
+If the downloaded {{ downloads.win_x64_installer.markdown.link }} file is flagged by your antivirus, then this most likely a false-positive related to NSIS installers, see <a href="https://nsis.sourceforge.io/NSIS_False_Positives" target="_blank">NSIS False Positives</a>.
 
-To be sure, you can always download the ZIP archive [**Windows zip x64**]({{ download_urls.win_x64_zip }}) instead. It only contains the Music Presence application and no NSIS Installer and it should have a clean scan result with most, if not all, antivirus software.
+To be sure, you can always download the ZIP archive {{ downloads.win_x64_zip.markdown.link }} instead. It only contains the Music Presence application and no NSIS Installer and it should have a clean scan result with most, if not all, antivirus software.
 
 ### Launching the Windows installer from the Firefox downloads
 
