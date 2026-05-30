@@ -24,7 +24,7 @@ Make sure you read [Usage](#usage) and [Next steps](#next-steps) after installat
 
 If you are unsure which file to download or what to do with it, read the following installation instructions. Select your operating system by clicking the respective tab.
 
-=== ":fontawesome-brands-windows: &ensp; Windows"
+=== ":fontawesome-brands-windows:&ensp;Windows"
 
     For most people {{ downloads.win_x64_installer.markdown.link }} is the right choice.
     
@@ -37,7 +37,7 @@ If you are unsure which file to download or what to do with it, read the followi
     
     Alternatively, you can download the ZIP archive {{ downloads.win_x64_zip.markdown.link }} instead. To run it, right-click and extract it, then double-click the **Music Presence** or **Music Presence.exe** file in the extracted folder. Note that the ZIP is [not fully standalone](../faq.md#is-the-windows-zip-fully-standalone) and there won't be any entry in the start menu like with the installer.
 
-=== ":fontawesome-brands-apple: &ensp; Mac"
+=== ":fontawesome-brands-apple:&ensp;Mac"
 
     If you are unsure which download is the right one, click on the :fontawesome-brands-apple: Apple logo in the top-left corner of your screen and select "**About This Mac**".
 
@@ -51,9 +51,7 @@ If you are unsure which file to download or what to do with it, read the followi
     2. Drag the Music Presence app into the Applications folder. Do **not** open Music Presence from this window, as it wouldn't be properly installed then
     3. Close the window, then open :custom-mac-finder: Finder and open the :custom-mac-applications: Applications folder. Look for **Music Presence** and double-click the app to launch it
 
-=== ":custom-linux: &ensp; Linux"
-
-    !!! warning "TODO"
+=== ":custom-linux:&ensp;Linux"
 
 ## Usage
 
@@ -74,11 +72,11 @@ After installing the app for the first time, you might want to read the followin
 
 ## Package managers
 
-=== ":custom-homebrew: &ensp; Homebrew"
+=== ":custom-homebrew:&ensp;Homebrew"
     
     !!! warning "TODO"
 
-=== ":fontawesome-brands-arch-linux: &ensp; AUR"
+=== ":fontawesome-brands-arch-linux:&ensp;AUR"
     
     !!! warning "TODO"
 
@@ -99,20 +97,20 @@ After installing the app for the first time, you might want to read the followin
 
 If it seems like the app did not launch or you can't see the app icon in the <span class="os-dependent-text" data-windows="tray menu" data-mac="menu bar" data-linux="system tray">tray menu</span>, this can have several reasons depending on the operating system you are using.
 
-=== ":fontawesome-brands-windows: &ensp; Windows"
+=== ":fontawesome-brands-windows:&ensp;Windows"
 
     The <nobr>:custom-musicpresence: Music Presence</nobr> icon may be hidden in your tray's overflow menu. To find it, you just need to click the <nobr>triangular :lucide-chevron-up: symbol</nobr> in the tray menu. If you want it to be visible at all times, you can simply drag the Music Presence icon into the tray.
 
     !!! info "Bug with special letters in the username"
         If you have special letters in your username, like `ã` or Cyrillic letters, there is currently a bug that causes the app to quit immediately when it's started: https://github.com/ungive/discord-music-presence/issues/716. Right now the only solution is to change your Windows username or run Music Presence under a different user account with a name that does not contain these letters.
 
-=== ":fontawesome-brands-apple: &ensp; Mac"
+=== ":fontawesome-brands-apple:&ensp;Mac"
 
     !!! warning "TODO"
         - The icon may be hidden under your display's notch
         - There may be too many icons in your menu bar that push the Music Presence icon out of view
 
-=== ":custom-linux: &ensp; Linux"
+=== ":custom-linux:&ensp;Linux"
 
     !!! warning "TODO"
 
