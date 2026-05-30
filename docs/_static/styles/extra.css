@@ -389,3 +389,8 @@ div.tabbed-set .tabbed-content {
 [data-md-color-scheme="default"] .dark-only {
   display: none !important;
 }
+
+.tabbed-set .tabbed-labels label a {
+  pointer-events: none;
+  user-select: none;
+}
