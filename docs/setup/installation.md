@@ -133,20 +133,9 @@ Music Presence is also available with some package managers. Using a package man
 
     Make sure you trust the contents of the {{ blank_link("`PGKBUILD`", "https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=" ~ packages.aur.name) }} file before installing it, i.e. verify that the Music Presence download URL matches one of the download URLs from [above](#download).
 
-## Automatic updates
-
-!!! warning "TODO"
-
-## Autostart
-
-!!! warning "TODO"
-
 ## Common issues
 
 ### The app did not launch
-
-!!! warning "TODO"
-    Move this into [App Interaction](./interaction.md).
 
 If it seems like the app did not launch or you can't see the app icon in the <span class="os-dependent-text" data-windows="tray menu" data-mac="menu bar" data-linux="system tray">tray menu</span>, this can have several reasons depending on the operating system you are using.
 
@@ -167,19 +156,13 @@ If it seems like the app did not launch or you can't see the app icon in the <sp
 
     !!! warning "TODO"
 
-!!! warning "TODO"
-
-    If the app still did not launch...
-
-    - Link to the "Community" tab to join the Discord community
-
 ### Windows protected your PC
 
 If you get a pop-up with the title "Windows protected your PC", then this is because Windows does not recognize the developer of the app, not because the app is malicious.
 
 Simply click on "**More info**" and then on "**Run anyway**".
 
-### The application is flagged by antivirus
+### The application is flagged by your antivirus
 
 If the downloaded {{ downloads.win_x64_installer.markdown.link }} file is flagged by your antivirus, then this most likely a false-positive related to NSIS installers, see <a href="https://nsis.sourceforge.io/NSIS_False_Positives" target="_blank">NSIS False Positives</a>.
 
@@ -189,11 +172,15 @@ To be sure, you can always download the ZIP archive {{ downloads.win_x64_zip.mar
 
 On some Windows devices the app may fail to launch or experience subtle issues, if you launched the Windows installer directly from the downloads section in Firefox. To avoid any issues, it's best to open Windows Explorer first and then run the installer from there.
 
-## Getting help
+<script type="module" src="/_static/scripts/installation/reorder-download-buttons.js"></script>
+<script type="module" src="/_static/scripts/installation/select-and-sync-os.js"></script>
+
+---
 
 !!! warning "TODO"
 
-    - Link to the "Community" tab to join the Discord community
-
-<script type="module" src="/_static/scripts/installation/reorder-download-buttons.js"></script>
-<script type="module" src="/_static/scripts/installation/select-and-sync-os.js"></script>
+    - Add a section for "Automatic updates" of the application
+    - Add a section for "Autostart" (automatic startup) of the application
+    - Link to the "Community" tab to join the Discord community in the "The app did not launch" section, in case the app still did not launch for the user
+    - Link to the "Community" tab to join the Discord community in a "Getting help" section
+    - Write a version of "The app did not launch section" in "App interaction". Maybe use a Jinja template for this to avoid duplicate content
