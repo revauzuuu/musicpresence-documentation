@@ -26,7 +26,7 @@ Make sure you read [Usage](#usage) and [Next steps](#next-steps) after installat
 
 ## Installation
 
-If you are unsure which file to download or what to do with it, read the following installation instructions. Select your operating system by clicking the respective tab.
+For installation instructions, select your operating system by clicking the respective tab.
 
 === ":fontawesome-brands-windows:&ensp;Windows"
 
@@ -39,11 +39,13 @@ If you are unsure which file to download or what to do with it, read the followi
 
     The installer automatically adds **Music Presence** to your start menu for easy access.
     
+    ---
+
     Alternatively, you can download the ZIP archive {{ downloads.win_x64_zip.markdown.link }} instead. To run it, right-click and extract it, then double-click the **Music Presence** or **Music Presence.exe** file in the extracted folder. Note that the ZIP is [not fully standalone](../faq.md#is-the-windows-zip-fully-standalone) and there won't be any entry in the start menu like with the installer.
 
 === ":fontawesome-brands-apple:&ensp;Mac"
 
-    If you are unsure which download is the right one, click on the :fontawesome-brands-apple: Apple logo in the top-left corner of your screen and select "**About This Mac**".
+    If you are unsure which download is the right one, click on the :fontawesome-brands-apple: **Apple logo** in the top-left corner of your screen and select "**About This Mac**".
 
     In case it says **M1**, **M2** or similar under "Chip" or anywhere else in the window that opened, then you need to choose the {{ downloads.mac_arm64_dmg.markdown.link }} download.
 
@@ -68,7 +70,7 @@ If you are unsure which file to download or what to do with it, read the followi
     ./{{ downloads.linux_x86_64_appimage.filename }}
     ```
 
-    The AppImage bundles all dependencies and runs in an app sandbox.
+    ---
 
     For Ubuntu, Mint, Debian and other Debian-like Linux distributions, you can also download {{ downloads.linux_x86_64_deb.markdown.link }}. It only bundles the dependencies that are not provided by your Linux distribution and runs on your device natively. To install:
 
@@ -76,15 +78,13 @@ If you are unsure which file to download or what to do with it, read the followi
     sudo apt install ./{{ downloads.linux_x86_64_deb.filename }}
     ```
 
-    Similarly, for Fedora, CentOS, OpenSUSE and similar Linux distributions, you can download {{ downloads.linux_x86_64_rpm.markdown.link }} and install it using any of the following commands, depending on the distribution you are using:
+    Similarly, for Fedora, CentOS, OpenSUSE and similar RPM-based Linux distributions, you can download {{ downloads.linux_x86_64_rpm.markdown.link }} and install it using any of the following commands, depending on the distribution you are using:
 
     ```
     sudo dnf install ./{{ downloads.linux_x86_64_rpm.filename }}
     sudo zypper install ./{{ downloads.linux_x86_64_rpm.filename }}
     sudo rpm -i ./{{ downloads.linux_x86_64_rpm.filename }}
     ```
-
-    If none of the above options work for you, the {{ downloads.linux_x86_64_targz.markdown.link }} download is a simple archive that bundles the app and all of its dependencies.
 
     ---
 
@@ -94,9 +94,9 @@ If you are unsure which file to download or what to do with it, read the followi
 
 ## Usage
 
-After opening the app, right-click the <nobr>:custom-musicpresence: Music Presence</nobr> icon in your <span class="os-dependent-text" data-windows="tray menu" data-mac="menu bar" data-linux="system tray">tray menu</span> to access quick controls, to check the current status of the app and to open the settings.
+After installing and opening the app, right-click the <nobr>:custom-musicpresence: Music Presence</nobr> icon in your <span class="os-dependent-text" data-windows="tray menu" data-mac="menu bar" data-linux="system tray">tray menu</span> to access quick controls and the current state of the app and to open the settings.
 
-!!! info "Can't find it?"
+!!! info "Can't find the icon?"
 
     Read [The app did not launch](#the-app-did-not-launch) in the [Common issues](#common-issues) section below.
 
@@ -108,6 +108,8 @@ After installing the app for the first time, you might want to read the followin
 - Read [**Media Player Setup**](./media-player-setup.md){ data-preview } if your media player is not detected by Music Presence
 - Read [**Discord Presence**](../discord-presence/intro.md){ data-preview } for an introduction into all Discord-related app features
 - Read [**Scrobbling**](../scrobbling/intro.md){ data-preview } for information on when Scrobbling will be released
+
+---
 
 ## Package managers
 
