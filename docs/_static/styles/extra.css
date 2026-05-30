@@ -229,8 +229,13 @@
   padding-top: 0;
   padding-bottom: .25em;
 }
+.footer-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 .3rem;
+}
 .footer-links-container a:not(:first-of-type) {
-  margin-left: .3rem;
+  margin-left: 0;
 }
 .md-footer .md-copyright {
   padding: 0;
