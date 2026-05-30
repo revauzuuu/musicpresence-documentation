@@ -1,6 +1,10 @@
 ---
 title: Installation
 icon: lucide/download
+hide:
+    - tags
+tags:
+    - Setup
 ---
 
 # Installing Music Presence

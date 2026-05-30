@@ -3,6 +3,9 @@ title: Introduction
 icon: lucide/text-align-start
 hide:
     - toc
+    - tags
+tags:
+    - Scrobbling
 ---
 
 !!! Warning "TODO"

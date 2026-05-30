@@ -4,7 +4,7 @@ icon: lucide/history
 hide:
     - navigation
 search:
-  exclude: true
+    exclude: true
 ---
 
 !!! warning "TODOs for this page"

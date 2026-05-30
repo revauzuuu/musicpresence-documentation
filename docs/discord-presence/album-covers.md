@@ -3,6 +3,9 @@ title: Album Covers
 icon: lucide/images
 hide:
     - toc
+    - tags
+tags:
+    - Discord Presence
 ---
 
 !!! warning "TODO"

@@ -3,6 +3,9 @@ title: Discord Settings
 icon: fontawesome/brands/discord
 hide:
     - toc
+    - tags
+tags:
+    - Setup
 ---
 
 !!! warning "TODO"

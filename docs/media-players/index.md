@@ -4,6 +4,9 @@ icon: lucide/music
 hide:
     - navigation
     - toc
+    - tags
+tags:
+    - Media Players
 ---
 
 <!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->

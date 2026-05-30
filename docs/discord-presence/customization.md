@@ -3,6 +3,9 @@ title: Customization
 icon: lucide/brush
 hide:
     - toc
+    - tags
+tags:
+    - Discord Presence
 ---
 
 !!! Warning "TODO"

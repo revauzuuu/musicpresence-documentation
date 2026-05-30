@@ -1,6 +1,10 @@
 ---
 title: Media Player Setup
 icon: lucide/music
+hide:
+    - tags
+tags:
+    - Setup
 ---
 
 !!! warning "TODO"

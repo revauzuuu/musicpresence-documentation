@@ -3,6 +3,9 @@ title: App Interaction
 icon: lucide/mouse-pointer-click
 hide:
     - toc
+    - tags
+tags:
+    - Setup
 ---
 
 # Interacting with the app

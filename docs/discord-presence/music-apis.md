@@ -3,6 +3,9 @@ title: Music APIs
 icon: lucide/cloud-download
 hide:
     - toc
+    - tags
+tags:
+    - Discord Presence
 ---
 
 !!! warning "TODO"

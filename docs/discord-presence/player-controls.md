@@ -3,6 +3,9 @@ title: Player Controls
 icon: lucide/toggle-left
 hide:
     - toc
+    - tags
+tags:
+    - Discord Presence
 ---
 
 !!! Warning "TODO"

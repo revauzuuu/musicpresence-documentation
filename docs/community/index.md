@@ -4,6 +4,9 @@ icon: lucide/users-round
 hide:
     - navigation
     - toc
+    - tags
+tags:
+    - Community
 ---
 
 !!! warning "TODO"
