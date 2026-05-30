@@ -193,6 +193,5 @@ On some Windows devices the app may fail to launch or experience subtle issues, 
 
     - Link to the "Community" tab to join the Discord community
 
-<script src="/_static/scripts/get-os.js"></script>
-<script src="/_static/scripts/installation/reorder-download-buttons.js"></script>
-<script src="/_static/scripts/installation/select-and-sync-os.js"></script>
+<script type="module" src="/_static/scripts/installation/reorder-download-buttons.js"></script>
+<script type="module" src="/_static/scripts/installation/select-and-sync-os.js"></script>

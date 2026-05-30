@@ -1,3 +1,5 @@
+import { selectTabbedSetTab, getOS } from "../modules/helpers.mjs";
+
 // Automatically select any tab that contains the visitor's current operating system.
 function selectOSTabs() {
     const os = getOS();
@@ -18,28 +20,31 @@ function selectOSTabs() {
     const scrollY = window.scrollY;
     for (const set of document.querySelectorAll('div.tabbed-set')) {
         set.classList.add('no-animation');
-        for (const label of set.querySelectorAll('.tabbed-labels label')) {
-            const id = label.getAttribute('for');
-            if (id === null || id.length === 0) {
-                continue;
-            }
-            const title = label.innerText.trim();
-            if (title.toLowerCase() === os.toLowerCase()) {
-                // The tab needs to be clicked first, so that selection works
-                // when the page is opened with instant navigation.
-                label.click();
-                // Also check the appropriate input for Zensical's tab script
-                // to select the proper tab by default.
-                set.querySelectorAll('input').forEach(function (input) {
-                    input.removeAttribute('checked');
-                });
-                const input = set.querySelector('input#' + id);
-                input.setAttribute('checked', "checked");
-                // Make sure it's not highlighted in the primary/accent color.
-                document.activeElement.blur()
-                break;
-            }
-        }
+        selectTabbedSetTab(set, os);
+
+        // // FIXME Use selectTabbedSetTab.
+        // for (const label of set.querySelectorAll('.tabbed-labels label')) {
+        //     const id = label.getAttribute('for');
+        //     if (id === null || id.length === 0) {
+        //         continue;
+        //     }
+        //     const title = label.innerText.trim();
+        //     if (title.toLowerCase() === os.toLowerCase()) {
+        //         // The tab needs to be clicked first, so that selection works
+        //         // when the page is opened with instant navigation.
+        //         label.click();
+        //         // Also check the appropriate input for Zensical's tab script
+        //         // to select the proper tab by default.
+        //         set.querySelectorAll('input').forEach(function (input) {
+        //             input.removeAttribute('checked');
+        //         });
+        //         const input = set.querySelector('input#' + id);
+        //         input.setAttribute('checked', "checked");
+        //         // Make sure it's not highlighted in the primary/accent color.
+        //         document.activeElement.blur()
+        //         break;
+        //     }
+        // }
         // Preserve the scroll position after clicking labels. In case the
         // content script reloads due to a hash link being clicked (any link
         // starting with "#") (why does it reload the script with instant

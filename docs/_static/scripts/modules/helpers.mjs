@@ -1,3 +1,27 @@
+// Determines the OS of the visitor.
+// Source: https://stackoverflow.com/a/38241481
+export function getOS() {
+    const userAgent = window.navigator.userAgent,
+        platform = window.navigator?.userAgentData?.platform || window.navigator.platform,
+        macosPlatforms = ['macOS', 'Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+    let os = null;
+    if (macosPlatforms.indexOf(platform) !== -1) {
+        os = 'mac';
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = 'ios';
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = 'windows';
+    } else if (/Android/.test(userAgent)) {
+        os = 'android';
+    } else if (/Linux/.test(platform)) {
+        os = 'linux';
+    }
+    return os;
+}
+
+// Selects the tab with the given name (inner text) in a tabbed set.
 export function selectTabbedSetTab(tabbedSet, tabNameInsensitive) {
     if (!(tabbedSet instanceof HTMLElement)) {
         throw Error("The tabbed set is not an HTML element");
