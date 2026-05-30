@@ -98,16 +98,16 @@ After installing and opening the app, right-click the <nobr>:custom-musicpresenc
 
 !!! info "Can't find the icon?"
 
-    Read [The app did not launch](#the-app-did-not-launch) in the [Common issues](#common-issues) section below.
+    Read [The app did not launch](#the-app-did-not-launch){ data-preview } in the [Common issues](#common-issues) section below.
 
 ## Next steps
 
 After installing the app for the first time, you might want to read the following help articles:
 
-- Read [**Discord Settings**](./discord-settings.md){ data-preview } for important Discord settings you need to enable
-- Read [**Media Player Setup**](./media-player-setup.md){ data-preview } if your media player is not detected by Music Presence
-- Read [**Discord Presence**](../discord-presence/intro.md){ data-preview } for an introduction into all Discord-related app features
-- Read [**Scrobbling**](../scrobbling/intro.md){ data-preview } for information on when Scrobbling will be released
+- Read [**Discord Settings**](./discord-settings.md) for important Discord settings you need to enable
+- Read [**Media Player Setup**](./media-player-setup.md) if your media player is not detected by Music Presence
+- Read [**Discord Presence**](../discord-presence/intro.md) for an introduction into all Discord-related app features
+- Read [**Scrobbling**](../scrobbling/intro.md) for information on when Scrobbling will be released
 
 ---
 
