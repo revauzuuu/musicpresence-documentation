@@ -355,6 +355,29 @@ div.tabbed-set .tabbed-content {
   background-color: white;
   border-color: #6c6f78;
 }
+@media screen and (max-width: 27.5em) {
+  .download-button .text {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.5em;
+  }
+  .download-button .subtitle .small {
+    font-size: 11pt;
+  }
+  .download-button-container {
+    width: 100%;
+    max-width: 20em;
+  }
+  .download-button {
+    width: 100%;
+    padding: 0.4em 1em;
+    border-radius: 4pt;
+  }
+  .download-button .icon {
+    width: 2em;
+    height: 2em;
+  }
+}
 
 /* [Zensical] Remove the margin for tabbed content on mobile. */
 @media screen and (max-width: 44.9844em) {
@@ -401,6 +424,24 @@ div.tabbed-set .tabbed-content {
 .download-heading img {
   display: block;
   height: .9em;
+}
+.download-links {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+@media (max-width: 27.5em) {
+  .download-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.75em !important;
+  }
+  .download-links {
+    display: flex;
+    gap: 0.5rem;
+  }
 }
 
 /* Styling classes for theme-dependent elements. */

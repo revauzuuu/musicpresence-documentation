@@ -15,8 +15,10 @@ Make sure you read [Usage](#usage) and [Next steps](#next-steps) after installat
 
 <h2 id="download" class="download-heading">
     <span>Download</span>
-    <a href="{{ musicpresence_github_repository }}" target="_blank"><img src="https://img.shields.io/github/stars/ungive/discord-music-presence?style=flat&label=GitHub%20Stars&logo=github&logoColor=white&labelColor=4a442f&color=be8c20&cacheSeconds=3600" /></a>
-    <a href="{{ musicpresence_github_repository }}/releases" target="_blank"><img src="https://img.shields.io/github/downloads/ungive/discord-music-presence/total?style=flat&label=Downloads&logo=hack-the-box&logoColor=white&labelColor=444&color=ddd&cacheSeconds=600" /></a>
+    <span class="download-links">
+        <a href="{{ musicpresence_github_repository }}" target="_blank"><img src="https://img.shields.io/github/stars/ungive/discord-music-presence?style=flat&label=GitHub%20Stars&logo=github&logoColor=white&labelColor=4a442f&color=be8c20&cacheSeconds=3600" /></a>
+        <a href="{{ musicpresence_github_repository }}/releases" target="_blank"><img src="https://img.shields.io/github/downloads/ungive/discord-music-presence/total?style=flat&label=Downloads&logo=hack-the-box&logoColor=white&labelColor=444&color=ddd&cacheSeconds=600" /></a>
+    </span>
 </h2>
 
 {% include "download-buttons.html" %}
