@@ -103,6 +103,9 @@
 :root > [data-md-color-scheme="default"] .tabbed-set {
   --md-code-bg-color: #f3f3f3;
 }
+:root > [data-md-color-scheme="default"] .tabbed-set .admonition code {
+  --md-code-bg-color: #e3e3e3;
+}
 
 /* [Zensical] Various color scheme fixes (dark mode). */
 :root > [data-md-color-scheme="slate"] {
@@ -158,6 +161,9 @@
 }
 :root > [data-md-color-scheme="slate"] .tabbed-set {
   --md-code-bg-color: #2c2c2c;
+}
+:root > [data-md-color-scheme="slate"] .tabbed-set .admonition code {
+  --md-code-bg-color: #1f1f1f;
 }
 
 /* Custom logo with light and dark variants. */

@@ -100,3 +100,28 @@ def define_env(env):
             "url": "https://github.com/ungive/discord-music-presence/releases/download/v2.3.5/musicpresence-2.3.5-linux-x86_64.tar.gz",
         }),
     }
+    env.variables["packages"] = {
+        "homebrew": {
+            "name": "music-presence",
+            "url": "https://formulae.brew.sh/cask/music-presence"
+        },
+        "aur": {
+            "name": "music-presence-bin",
+            "url": "https://aur.archlinux.org/packages/music-presence-bin",
+        },
+    }
+
+    @env.macro
+    def anchor_tab_url(anchor, tab):
+        if anchor.startswith("#"):
+            anchor = anchor[1:]
+        return f"?tab={tab}#{anchor}"
+    
+    @env.macro
+    def package_link(package):
+        info = env.variables["packages"][package]
+        return f'<a href="{info["url"]}" target="_blank">`{info["name"]}`</a>'
+
+    @env.macro
+    def blank_link(text, href):
+        return f'<a href="{href}" target="_blank" rel="noopener noreferrer">{text}</a>'

@@ -55,6 +55,10 @@ If you are unsure which file to download or what to do with it, read the followi
     2. Drag the Music Presence app into the Applications folder. Do **not** open Music Presence from this window, as it wouldn't be properly installed then
     3. Close the window, then open :custom-mac-finder: Finder and open the :custom-mac-applications: Applications folder. Look for **Music Presence** and double-click the app to launch it
 
+    !!! quote ""
+
+        If you use {{ blank_link("Homebrew", "https://brew.sh") }}, you can install the {{ package_link("homebrew") }} package. Instructions [below]({{ anchor_tab_url("#package-managers", "homebrew") }}).
+
 === ":custom-linux:&ensp;Linux"
 
     The easiest and safest way to download and run Music Presence for Linux universally is with the {{ downloads.linux_x86_64_appimage.markdown.link }} download. Mark the file as executable and run it:
@@ -82,6 +86,12 @@ If you are unsure which file to download or what to do with it, read the followi
 
     If none of the above options work for you, the {{ downloads.linux_x86_64_targz.markdown.link }} download is a simple archive that bundles the app and all of its dependencies.
 
+    ---
+
+    !!! quote ""
+
+        If you use Arch Linux, you can install the <u>unofficial</u> {{ package_link("aur") }} package. Make sure you trust the contents of the {{ blank_link("`PGKBUILD`", "https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=" ~ packages.aur.name) }} file before installing it. Instructions [below]({{ anchor_tab_url("#package-managers", "aur") }}).
+
 ## Usage
 
 After opening the app, right-click the <nobr>:custom-musicpresence: Music Presence</nobr> icon in your <span class="os-dependent-text" data-windows="tray menu" data-mac="menu bar" data-linux="system tray">tray menu</span> to access quick controls, to check the current status of the app and to open the settings.
@@ -101,13 +111,25 @@ After installing the app for the first time, you might want to read the followin
 
 ## Package managers
 
+Music Presence is also available with some package managers. Using a package manager ensures that the app is always up-to-date.
+
 === ":custom-homebrew:&ensp;Homebrew"
     
-    !!! warning "TODO"
+    We maintain the {{ package_link("homebrew") }} package on {{ blank_link("Homebrew", "https://brew.sh") }} for Mac:
+
+    ```
+    brew install {{ packages.homebrew.name }}
+    ```
 
 === ":fontawesome-brands-arch-linux:&ensp;AUR"
     
-    !!! warning "TODO"
+    You can install the <u>unofficial</u> AUR package {{ package_link("aur") }}:
+
+    ```
+    yay -S {{ packages.aur.name }}
+    ```
+
+    Make sure you trust the contents of the {{ blank_link("`PGKBUILD`", "https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=" ~ packages.aur.name) }} file before installing it, i.e. verify that the Music Presence download URL matches one of the download URLs from [above](#download).
 
 ## Automatic updates
 

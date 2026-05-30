@@ -10,7 +10,6 @@ repo_name = "ungive/discord-music-presence"
 repo_url = "https://github.com/ungive/discord-music-presence"
 edit_uri = "https://github.com/music-presence/documentation/edit/main/docs/"
 extra_css = ["_static/styles/extra.css"]
-extra_javascript = ["_static/scripts/common.js"]
 nav = [
     {"Get started" = [
         "index.md",
@@ -55,6 +54,14 @@ nav = [
         ]},
     ]},
 ]
+
+[[project.extra_javascript]]
+path = "_static/scripts/common.js"
+type = "module"
+
+[[project.extra_javascript]]
+path = "_static/scripts/modules/helpers.mjs"
+type = "module"
 
 [project.theme]
 language = "en"
