@@ -106,6 +106,9 @@
 :root > [data-md-color-scheme="default"] .tabbed-set .admonition code {
   --md-code-bg-color: #e3e3e3;
 }
+[data-md-color-scheme="default"] .md-typeset hr {
+  border-bottom: .05rem solid #ddd;
+}
 
 /* [Zensical] Various color scheme fixes (dark mode). */
 :root > [data-md-color-scheme="slate"] {
