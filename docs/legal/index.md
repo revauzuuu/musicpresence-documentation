@@ -3,6 +3,8 @@ title: Overview
 icon: lucide/section
 hide:
     - footer
+search:
+    exclude: true
 ---
 
 <!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->

@@ -3,6 +3,8 @@ title: Privacy Policy
 icon: lucide/user-lock
 hide:
     - footer
+search:
+    exclude: true
 ---
 
 <!-- Workaround until https://github.com/zensical/backlog/issues/120 is implemented. -->
