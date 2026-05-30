@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+icon: lucide/wrench
 hide:
     - navigation
     - toc

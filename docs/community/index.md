@@ -1,5 +1,6 @@
 ---
 title: Community
+icon: lucide/users-round
 hide:
     - navigation
     - toc

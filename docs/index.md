@@ -1,5 +1,6 @@
 ---
 title: Documentation
+icon: lucide/zap
 hide:
     - toc
 ---

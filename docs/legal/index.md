@@ -1,5 +1,6 @@
 ---
 title: Overview
+icon: lucide/section
 hide:
     - footer
 ---

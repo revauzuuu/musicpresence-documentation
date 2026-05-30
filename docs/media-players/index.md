@@ -1,5 +1,6 @@
 ---
 title: Supported Media Players
+icon: lucide/music
 hide:
     - navigation
     - toc

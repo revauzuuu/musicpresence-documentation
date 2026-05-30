@@ -32,19 +32,19 @@ nav = [
         ]},
     ]},
     {"Supported Players" = [
-        "media-players.md"
+        "media-players/index.md"
     ]},
     {"Troubleshooting" = [
-        "troubleshooting.md"
+        "troubleshooting/index.md"
     ]},
     {"FAQs" = [
-        "faq.md"
+        "faqs/index.md"
     ]},
     {"Community" = [
-        "community.md"
+        "community/index.md"
     ]},
     {"Changelog" = [
-        "changelog.md"
+        "changelog/index.md"
     ]},
     {"Legal" = [
         "legal/index.md",
@@ -70,6 +70,7 @@ features = [
     "navigation.sections",
     "navigation.tabs",
     "navigation.indexes",
+    "navigation.expand",
     "toc.follow",
     "search.highlight",
 ]

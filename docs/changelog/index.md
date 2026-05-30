@@ -1,5 +1,6 @@
 ---
 title: Changelog
+icon: lucide/history
 hide:
     - navigation
 ---
