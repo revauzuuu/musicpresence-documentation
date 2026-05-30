@@ -49,6 +49,7 @@
   --md-accent-fg-color: #415a4d;
   --md-accent-fg-color--transparent: #84b99c44;
   --md-primary-fg-color: #456cd7;
+  --md-code-bg-color: #f5f5f5;
   --md-code-fg-color: #363636;
 }
 [data-md-color-scheme="default"] .md-sidebar.md-sidebar--secondary .md-nav__item .md-nav__link--active {
@@ -393,6 +394,7 @@ div.tabbed-set .tabbed-content {
   height: .9em;
 }
 
+/* Styling classes for theme-dependent elements. */
 [data-md-color-scheme="slate"] .light-only {
   display: none !important;
 }
@@ -400,7 +402,14 @@ div.tabbed-set .tabbed-content {
   display: none !important;
 }
 
+/* [Zensical] Do not allow the browser to show the pointless link URL. Also do
+not allow the user to select the text.*/
 .tabbed-set .tabbed-labels label a {
   pointer-events: none;
   user-select: none;
+}
+
+/* [Zensical] Slightly increase the font size for admonitions. */
+.md-typeset .admonition {
+  font-size: .88em;
 }
