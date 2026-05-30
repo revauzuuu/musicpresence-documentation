@@ -35,7 +35,7 @@ If you are unsure which file to download or what to do with it, read the followi
 
     The installer automatically adds **Music Presence** to your start menu for easy access.
     
-    Alternatively, you can download the ZIP archive [**Windows zip x64**]({{ download_urls.win_x64_zip }}) instead. To run it, right-click and extract it, then double click the **Music Presence** or **Music Presence.exe** file in the extracted folder. Note that the ZIP is [not fully standalone](../faq.md#is-the-windows-zip-fully-standalone) and there won't be any entry in the start menu like with the installer.
+    Alternatively, you can download the ZIP archive [**Windows zip x64**]({{ download_urls.win_x64_zip }}) instead. To run it, right-click and extract it, then double-click the **Music Presence** or **Music Presence.exe** file in the extracted folder. Note that the ZIP is [not fully standalone](../faq.md#is-the-windows-zip-fully-standalone) and there won't be any entry in the start menu like with the installer.
 
 === ":fontawesome-brands-apple: &ensp; Mac"
 
@@ -48,7 +48,7 @@ If you are unsure which file to download or what to do with it, read the followi
     To install the app:
 
     1. Double-click the downloaded DMG file. A new window should open
-    2. Drag the Music Presence app into the Applications folder. Do not double-click the app just yet, as it wouldn't be properly installed then
+    2. Drag the Music Presence app into the Applications folder. Do **not** open Music Presence from this window, as it wouldn't be properly installed then
     3. Close the window, then open :custom-mac-finder: Finder and open the :custom-mac-applications: Applications folder. Look for **Music Presence** and double-click the app to launch it
 
 === ":custom-linux: &ensp; Linux"
@@ -136,7 +136,7 @@ To be sure, you can always download the ZIP archive [**Windows zip x64**]({{ dow
 
 ### Launching the Windows installer from the Firefox downloads
 
-On some Windows devices the app may fail to launch or experience subtle issues, if you launched the Windows installer directly from the Downloads section in Firefox. I recommend that you open the Windows Explorer first and then run the installer from there.
+On some Windows devices the app may fail to launch or experience subtle issues, if you launched the Windows installer directly from the downloads section in Firefox. I recommend that you open Windows Explorer first and then run the installer from there.
 
 ## Getting help
 
