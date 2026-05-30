@@ -105,4 +105,6 @@ function init () {
     syncOSTabs();
 }
 
-init();
+document$.subscribe(function () {
+    init();
+});
