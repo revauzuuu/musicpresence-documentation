@@ -53,6 +53,31 @@ If you are unsure which file to download or what to do with it, read the followi
 
 === ":custom-linux:&ensp;Linux"
 
+    The easiest and safest way to download and run Music Presence for Linux universally is with the {{ downloads.linux_x86_64_appimage.markdown.link }} download. Mark the file as executable and run it:
+    
+    ```
+    chmod +x ./{{ downloads.linux_x86_64_appimage.filename }}
+    ./{{ downloads.linux_x86_64_appimage.filename }}
+    ```
+
+    The AppImage bundles all dependencies and runs in an app sandbox.
+
+    For Ubuntu, Mint, Debian and other Debian-like Linux distributions, you can also download {{ downloads.linux_x86_64_deb.markdown.link }}. It only bundles the dependencies that are not provided by your Linux distribution and runs on your device natively. To install:
+
+    ```
+    sudo apt install ./{{ downloads.linux_x86_64_deb.filename }}
+    ```
+
+    Similarly, for Fedora, CentOS, OpenSUSE and similar Linux distributions, you can download {{ downloads.linux_x86_64_rpm.markdown.link }} and install it using any of the following commands, depending on the distribution you are using:
+
+    ```
+    sudo dnf install ./{{ downloads.linux_x86_64_rpm.filename }}
+    sudo zypper install ./{{ downloads.linux_x86_64_rpm.filename }}
+    sudo rpm -i ./{{ downloads.linux_x86_64_rpm.filename }}
+    ```
+
+    If none of the above options work for you, the {{ downloads.linux_x86_64_targz.markdown.link }} download is a simple archive that bundles the app and all of its dependencies.
+
 ## Usage
 
 After opening the app, right-click the <nobr>:custom-musicpresence: Music Presence</nobr> icon in your <span class="os-dependent-text" data-windows="tray menu" data-mac="menu bar" data-linux="system tray">tray menu</span> to access quick controls, to check the current status of the app and to open the settings.
