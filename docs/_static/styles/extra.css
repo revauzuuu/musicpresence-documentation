@@ -94,6 +94,9 @@
 [data-md-color-scheme="default"] a.subtle-link:hover {
   color: #000 !important;
 }
+:root > [data-md-color-scheme="default"] .tabbed-set {
+  --md-code-bg-color: #f3f3f3;
+}
 
 /* [Zensical] Various color scheme fixes (dark mode). */
 :root > [data-md-color-scheme="slate"] {
@@ -141,6 +144,9 @@
 [data-md-color-scheme="slate"] a[href^="https://github.com/ungive/discord-music-presence/releases/download"]:hover,
 [data-md-color-scheme="slate"] a.subtle-link:hover {
   color: #fff !important;
+}
+:root > [data-md-color-scheme="slate"] .tabbed-set {
+  --md-code-bg-color: #2c2c2c;
 }
 
 /* Custom logo with light and dark variants. */
