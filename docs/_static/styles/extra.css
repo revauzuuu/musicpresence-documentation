@@ -184,12 +184,14 @@
 }
 
 /* [Zensical] Give text in the navigation sidebar a little more space so it does not wrap. */
-[data-md-component="sidebar"][data-md-type="navigation"] {
-  width: 12.5rem;
-}
-@supports selector(::-webkit-scrollbar) {
-  [dir=ltr] .md-sidebar__inner {
-    padding-right: calc(100% - 12.5rem);
+@media screen and (min-width: 76.2344em) {
+  [data-md-component="sidebar"][data-md-type="navigation"] {
+    width: 12.5rem;
+  }
+  @supports selector(::-webkit-scrollbar) {
+    [dir=ltr] .md-sidebar__inner {
+      padding-right: calc(100% - 12.5rem);
+    }
   }
 }
 [data-md-component="sidebar"][data-md-type="toc"] {
