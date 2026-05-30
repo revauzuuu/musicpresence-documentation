@@ -3,6 +3,8 @@ title: Changelog
 icon: lucide/history
 hide:
     - navigation
+search:
+  exclude: true
 ---
 
 !!! warning "TODOs for this page"
