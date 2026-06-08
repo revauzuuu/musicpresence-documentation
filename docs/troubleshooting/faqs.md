@@ -1,8 +1,7 @@
 ---
-title: Frequently Asked Questions
-icon: lucide/circle-question-mark
+title: FAQs
+icon: lucide/message-circle-question-mark
 hide:
-    - navigation
     - footer
 ---
 
