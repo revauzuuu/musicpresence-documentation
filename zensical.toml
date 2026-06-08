@@ -27,6 +27,7 @@ nav = [
         ]},
         {"Scrobbling" = [
             "scrobbling/intro.md",
+            "scrobbling/licensing.md",
         ]},
         {"Advanced" = [
             "advanced/app-interaction.md",
