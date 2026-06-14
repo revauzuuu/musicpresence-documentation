@@ -249,7 +249,7 @@
   width: 1.65rem;
 }
 body > .md-container {
-  min-height: calc(100vh - .5em - .25em);
+  min-height: 100vh;
 }
 
 /* @media screen and (min-width: 1em) {
