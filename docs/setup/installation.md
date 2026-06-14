@@ -174,8 +174,8 @@ To be sure, you can always download the ZIP archive {{ downloads.win_x64_zip.mar
 
 On some Windows devices the app may fail to launch or experience subtle issues, if you launched the Windows installer directly from the downloads section in Firefox. To avoid any issues, it's best to open Windows Explorer first and then run the installer from there.
 
-<script type="module" src="/_static/scripts/installation/reorder-download-buttons.js"></script>
-<script type="module" src="/_static/scripts/installation/select-and-sync-os.js"></script>
+<script type="module" src="/_static/scripts/page/installation/reorder-download-buttons.js"></script>
+<script type="module" src="/_static/scripts/page/select-and-sync-os.js"></script>
 
 ---
 

@@ -1,4 +1,4 @@
-import { getOS } from "../modules/helpers.mjs";
+import { getOS } from "../../modules/helpers.mjs";
 
 // Move the buttons for the visitor's current OS to the front.
 function reorderDownloadButtons () {
