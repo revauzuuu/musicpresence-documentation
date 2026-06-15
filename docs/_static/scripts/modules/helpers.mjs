@@ -30,6 +30,11 @@ export function selectTabbedSetTab(tabbedSet, tabNameInsensitive) {
         throw Error("The element is not a tabbed set");
     }
     const target = tabNameInsensitive.trim().toLowerCase();
+    let opened = false;
+    if (tabbedSet.parentElement.tagName.toLowerCase() === 'details') {
+        tabbedSet.parentElement.setAttribute('open', 'open');
+        opened = true;
+    }
     for (const label of tabbedSet.querySelectorAll('.tabbed-labels label')) {
         const id = label.getAttribute('for');
         if (id === null || id.length === 0) {
@@ -52,5 +57,8 @@ export function selectTabbedSetTab(tabbedSet, tabNameInsensitive) {
             // Make sure it's not highlighted in the primary/accent color.
             document.activeElement.blur()
         }
+    }
+    if (opened) {
+        tabbedSet.parentElement.removeAttribute('open');
     }
 }
