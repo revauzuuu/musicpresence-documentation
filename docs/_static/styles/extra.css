@@ -1,6 +1,6 @@
 /* Fonts (not using automatic Google Fonts). */
 @font-face {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 200 1000;
   src: local("Nunito") format("truetype"),
