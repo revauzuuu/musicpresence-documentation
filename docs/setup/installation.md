@@ -11,7 +11,7 @@ tags:
 
 Click one of the buttons below to download Music Presence for your operating system.
 
-Make sure you read [Usage](#usage) and [Next steps](#next-steps) after installation.
+Make sure you read about [usage](#usage) and the [next steps](#next-steps) after [installation](#installation).
 
 <h2 id="download" class="download-heading">
     <span>Download</span>
