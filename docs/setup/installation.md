@@ -13,7 +13,9 @@ Click one of the buttons below to download Music Presence for your operating sys
 
 Make sure you read about [usage](#usage) and the [next steps](#next-steps) after [installation](#installation).
 
-<h2 id="download" class="download-heading">
+## Download { .anchor-target aria-hidden="true" }
+
+<h2 class="download-heading">
     <span>Download</span>
     <span class="download-links">
         <a href="{{ musicpresence_github_repository }}" target="_blank"><img src="https://img.shields.io/github/stars/ungive/discord-music-presence?style=flat&label=GitHub%20Stars&logo=github&logoColor=white&labelColor=4a442f&color=be8c20&cacheSeconds=3600" /></a>

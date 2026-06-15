@@ -478,3 +478,12 @@ not allow the user to select the text.*/
 .md-typeset .admonition {
   font-size: .88em;
 }
+
+.anchor-target {
+  position: absolute;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  transform: translateY(calc(1.6em - 0.64em));
+}
