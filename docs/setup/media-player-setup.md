@@ -40,6 +40,38 @@ mark:not([data-md-highlight]) {
     color: #444;
     font-weight: 500;
 }
+.media-player-configuration-table-sibling {
+    display: none;
+}
+.media-player-configuration-table-sibling ~ .tabbed-set .tabbed-content {
+    padding: 0;
+}
+.media-player-configuration-table-sibling ~ .tabbed-set .tabbed-content .md-typeset__scrollwrap {
+    margin: 0;
+}
+.media-player-configuration-table-sibling ~ .tabbed-set .tabbed-content .md-typeset__table {
+    padding: 0;
+    margin-top: .25em;
+    border-top: 0;
+    margin-bottom: 0;
+}
+.media-player-configuration-table-sibling ~ .tabbed-set table {
+    border: 0;
+    border-radius: 0 !important;
+}
+.media-player-configuration-table-sibling ~ .tabbed-set table thead {
+    display: none;
+}
+.media-player-configuration-table-sibling ~ .tabbed-set table tbody tr:hover {
+    background-color: transparent;
+}
+.media-player-configuration-table-sibling ~ .tabbed-set table tbody tr:nth-of-type(1) td {
+    border-top: 0;
+}
+img[src*="/logo-128.png"] {
+    min-width: 23px;
+    width: 23px;
+}
 </style>
 
 This guide covers how to set up Music Presence with your media player.
@@ -85,19 +117,39 @@ If the media still does not show up after following the instructions for your me
 
 ???+ info "Additional configuration per media player"
     
-    | Player || Instructions |
-    |:-:|-|-|
-    | ![](https://live.musicpresence.app/v3/icons/aimp/logo-128.png){ width="23" } | AIMP | Install the [`Windows Media Control`](https://www.aimp.ru/forum/index.php?topic=63341){ target="_blank" } plugin. |
-    | ![](https://live.musicpresence.app/v3/icons/feishin/logo-128.png){ width="23" } | Feishin | Switch to the web backend, then go to `Settings` -> `Hotkeys` and enable `Media Session`. Note that Music Presence can only identify Feishin as mpv, when you use the mpv backend. |
-    | ![](https://live.musicpresence.app/v3/icons/foobar2000/logo-128.png){ width="23" } | foobar2000 | ==Windows== Install the [`foo_mediacontrol`](https://github.com/ungive/foo_mediacontrol){ target="_blank" } plugin. Click [Releases](https://github.com/ungive/foo_mediacontrol/releases/latest){ target="_blank" } to find all downloads. Alternatively you can also enable `Windows Universal Volume Control` under advanced preferences, but foobar2000 will not report the album name or the track duration then. |
-    | ![](https://live.musicpresence.app/v3/icons/itunes/logo-128.png){ width="23" } | iTunes | ==Windows== You need to run the [iTunes-SMTC](https://github.com/thewizrd/iTunes-SMTC){ target="_blank" } helper program alongside Music Presence. You can download it from the [Releases](https://github.com/thewizrd/iTunes-SMTC/releases/latest){ target="_blank" } or the <nobr>[Windows Store](https://apps.microsoft.com/detail/9nq3d21qt8ml){ target="_blank" }</nobr>.<br style="margin-bottom:.4em;">==Mac== iTunes is not supported on Mac. Use Apple Music instead. |
-    | ![](https://live.musicpresence.app/v3/icons/mpc-hc/logo-128.png){ width="23" } | MPC-HC | Under `Player` -> `User Interface` -> `Windows Integration` enable `Control via Windows UI (SMTC)`. If you don't have this setting, make sure to use this updated fork of MPC-HC: <nobr>[clsid2/mpc-hc](https://github.com/clsid2/mpc-hc){ target="_blank" }</nobr>. |
-    | ![](https://live.musicpresence.app/v3/icons/mpv/logo-128.png){ width="23" } | mpv | ==Windows== mpv must either be run with the `--media-controls=yes` command line flag or by setting `media-controls=yes` in `mpv.conf`.<br style="margin-bottom:.4em;">==Mac== You must install and run mpv using an `.app` bundle. mpv cannot be detected when run from the command line. |
-    | ![](https://live.musicpresence.app/v3/icons/musicbee/logo-128.png){ width="23" } | MusicBee | ==Windows== Install the [`mb_MediaControl`](https://github.com/HenryPDT/mb_MediaControl){ target="_blank" } plugin. Click [Releases](https://github.com/HenryPDT/mb_MediaControl/releases/latest){ target="_blank" } to find all downloads. After importing it into MusicBee, make sure the information window shows version 1.0.4 or newer.<br style="margin-bottom:.4em;">==Linux== If you run MusicBee under Wine, use [`mprisbee-bridge`](https://github.com/Kyletsit/mprisbee-bridge){ target="_blank" }. |
-    | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png){ width="23" } | Qobuz | ==Windows== Qobuz does not report what it is playing anymore since a past update. You can try [downgrading](https://github.com/ungive/discord-music-presence/issues/244#issuecomment-3556269025){ target="_blank" } or [patching](https://github.com/TubaApollo/qobuz-smtc){ target="_blank" } Qobuz (this may violate Qobuz ToS, use at your own risk). <br style="margin-bottom:.4em;">==Mac== Qobuz does not report what it is playing on Mac. |
-    | ![](https://live.musicpresence.app/v3/icons/vlc/logo-128.png){ width="23" } | VLC |  ==Windows== Install the [`vlc-win10smtc`](https://github.com/spmn/vlc-win10smtc){ target="_blank" } plugin. |
-    | ![](https://live.musicpresence.app/v3/icons/winamp/logo-128.png){ width="23" } | Winamp | Install the [`gen_smtc`](https://github.com/NanMetal/gen_smtc){ target="_blank" } plugin. |
-    | ![](https://live.musicpresence.app/v3/icons/windows-media-player-legacy/logo-128.png){ width="23" } | Windows Media Player Legacy | [Windows-Media-Player-Discord-RPC](https://github.com/T0biasCZe/Windows-Media-Player-Discord-RPC){ target="_blank" } is a 2-in-1 program that allows Windows Media Player to be detected by Music Presence while it's running and also provides its own Discord RPC implementation. |
+    Make sure to select the correct operating system by clicking on the respective tab.
+
+    <div class="media-player-configuration-table-sibling"></div>
+
+    === ":fontawesome-brands-windows:&ensp;Windows"
+
+        | Player || Instructions |
+        |:-:|-|-|
+        | ![](https://live.musicpresence.app/v3/icons/aimp/logo-128.png) | AIMP | Install the [`Windows Media Control`](https://www.aimp.ru/forum/index.php?topic=63341){ target="_blank" } plugin. |
+        | ![](https://live.musicpresence.app/v3/icons/feishin/logo-128.png) | Feishin | Switch to the web backend, then go to `Settings` -> `Hotkeys` and enable `Media Session`. Note that Music Presence can only identify Feishin as mpv, when you use the mpv backend. |
+        | ![](https://live.musicpresence.app/v3/icons/foobar2000/logo-128.png) | foobar2000 | Install the [`foo_mediacontrol`](https://github.com/ungive/foo_mediacontrol){ target="_blank" } plugin. Click [Releases](https://github.com/ungive/foo_mediacontrol/releases/latest){ target="_blank" } to find all downloads. Alternatively you can also enable `Windows Universal Volume Control` under advanced preferences, but foobar2000 will not report the album name or the track duration then. |
+        | ![](https://live.musicpresence.app/v3/icons/itunes/logo-128.png) | iTunes | You need to run the [`iTunes-SMTC`](https://github.com/thewizrd/iTunes-SMTC){ target="_blank" } helper program alongside Music Presence. You can download it from the [Releases](https://github.com/thewizrd/iTunes-SMTC/releases/latest){ target="_blank" } or the <nobr>[Windows Store](https://apps.microsoft.com/detail/9nq3d21qt8ml){ target="_blank" } |
+        | ![](https://live.musicpresence.app/v3/icons/mpc-hc/logo-128.png) | MPC-HC | Under `Player` -> `User Interface` -> `Windows Integration` enable `Control via Windows UI (SMTC)`. If you don't have this setting, make sure to use this updated fork of MPC-HC: <nobr>[clsid2/mpc-hc](https://github.com/clsid2/mpc-hc){ target="_blank" }</nobr>. |
+        | ![](https://live.musicpresence.app/v3/icons/mpv/logo-128.png) | mpv | mpv must either be run with the `--media-controls=yes` command line flag or by setting `media-controls=yes` in `mpv.conf`. |
+        | ![](https://live.musicpresence.app/v3/icons/musicbee/logo-128.png) | MusicBee | Install the [`mb_MediaControl`](https://github.com/HenryPDT/mb_MediaControl){ target="_blank" } plugin. Click [Releases](https://github.com/HenryPDT/mb_MediaControl/releases/latest){ target="_blank" } to find all downloads. After importing it into MusicBee, make sure the information window shows version 1.0.4 or newer. |
+        | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing anymore since a past update. You can try [downgrading](https://github.com/ungive/discord-music-presence/issues/244#issuecomment-3556269025){ target="_blank" } or [patching](https://github.com/TubaApollo/qobuz-smtc){ target="_blank" } Qobuz (this may violate Qobuz ToS, use at your own risk). |
+        | ![](https://live.musicpresence.app/v3/icons/vlc/logo-128.png) | VLC |  Install the [`vlc-win10smtc`](https://github.com/spmn/vlc-win10smtc){ target="_blank" } plugin. |
+        | ![](https://live.musicpresence.app/v3/icons/winamp/logo-128.png) | Winamp | Install the [`gen_smtc`](https://github.com/NanMetal/gen_smtc){ target="_blank" } plugin. |
+        | ![](https://live.musicpresence.app/v3/icons/windows-media-player-legacy/logo-128.png) | Windows Media Player Legacy | [`Windows-Media-Player-Discord-RPC`](https://github.com/T0biasCZe/Windows-Media-Player-Discord-RPC){ target="_blank" } is a 2-in-1 program that allows Windows Media Player to be detected by Music Presence while it's running and also provides its own Discord RPC implementation. |
+
+    === ":fontawesome-brands-apple:&ensp;Mac"
+
+        | Player || Instructions |
+        |:-:|-|-|
+        | ![](https://live.musicpresence.app/v3/icons/itunes/logo-128.png) | iTunes | iTunes is not supported on Mac. Use Apple Music instead. |
+        | ![](https://live.musicpresence.app/v3/icons/mpv/logo-128.png) | mpv | You must install and run mpv using an `.app` bundle. mpv cannot be detected when run as a plain binary from the command line. |
+        | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing on Mac. |
+
+    === ":custom-linux:&ensp;Linux"
+
+        | Player || Instructions |
+        |:-:|-|-|
+        | ![](https://live.musicpresence.app/v3/icons/musicbee/logo-128.png) | MusicBee | If you run MusicBee under Wine, you can use [`mprisbee-bridge`](https://github.com/Kyletsit/mprisbee-bridge){ target="_blank" }. |
 
 *[ToS]: Terms of Service
 
@@ -149,4 +201,4 @@ If the media still does not show up after following the instructions for your me
     - Browser extension source code: https://github.com/ungive/media-control-extension/
     - Is there another way to show the Windows 10 media overlay than with media keys on the keyboard only?
 
-<script type="module" src="/_static/scripts/page/select-and-sync-os.js"></script>
+<!-- <script type="module" src="/_static/scripts/page/select-and-sync-os.js"></script> -->
