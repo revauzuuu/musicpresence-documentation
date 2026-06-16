@@ -90,7 +90,7 @@ If the media does not show up, refer to the [next section](#media-player-configu
 
 === ":fontawesome-brands-windows:&ensp;Windows"
 
-    ==Windows 11== Click on the section on the right of your task bar that is highlighted in the screenshot to see whether the media source reports what it is playing.
+    ==Windows 11== Click on the section on the right of your task bar that is highlighted in the screenshot to see whether an application reports what it is playing.
     
     ![Windows 11 media controls](/_static/media/media-controls-win-win11-dark.png#only-dark)
     ![Windows 11 media controls](/_static/media/media-controls-win-win11-light.png#only-light)
@@ -102,7 +102,7 @@ If the media does not show up, refer to the [next section](#media-player-configu
 
 === ":fontawesome-brands-apple:&ensp;Mac"
 
-    Click on the icon in the menu bar that is shown in the screenshot to see whether the media source reports what it is playing.
+    Click on the icon in the menu bar that is shown in the screenshot to see whether an application reports what it is playing.
 
     ![macOS media controls](/_static/media/media-controls-mac-dark.png#only-dark)
     ![macOS media controls](/_static/media/media-controls-mac-light.png#only-light)
