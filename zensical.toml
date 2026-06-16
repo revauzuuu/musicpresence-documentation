@@ -72,6 +72,7 @@ custom_dir = "overrides"
 font = false
 features = [
     "content.action.edit",
+    "content.tooltips",
     "navigation.footer",
     "navigation.instant",
     "navigation.path",
