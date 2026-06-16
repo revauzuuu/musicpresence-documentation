@@ -62,8 +62,12 @@ mark:not([data-md-highlight]) {
 .media-player-configuration-table-sibling ~ .tabbed-set table thead {
     display: none;
 }
+.media-player-configuration-table-sibling ~ .tabbed-set table {
+    background-color: transparent;
+}
 .media-player-configuration-table-sibling ~ .tabbed-set table tbody tr:hover {
     background-color: transparent;
+    box-shadow: none;
 }
 .media-player-configuration-table-sibling ~ .tabbed-set table tbody tr:nth-of-type(1) td {
     border-top: 0;
