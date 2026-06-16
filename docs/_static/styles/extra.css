@@ -487,3 +487,32 @@ not allow the user to select the text.*/
   overflow: hidden;
   transform: translateY(calc(1.6em - 0.64em));
 }
+
+[data-md-color-scheme="slate"] details .tabbed-set {
+  border: 1px solid #333;
+}
+[data-md-color-scheme="default"] details .tabbed-set {
+  border: 1px solid #ccc;
+}
+
+[data-md-color-scheme="slate"] details summary::after {
+  color: white !important;
+}
+[data-md-color-scheme="default"] details summary::after {
+  color: black !important;
+}
+
+[data-md-color-scheme="default"] details {
+  outline: 1px solid #00000022;
+}
+
+/* [Zensical] Change the "info" admonition color to the same color as "note". */
+.admonition.info, details.info {
+  background-color: #448aff1a !important;
+}
+.admonition.info .admonition-title::before {
+  background-color: #448aff !important;
+}
+details.info summary::before {
+  background-color: #448aff !important;
+}
