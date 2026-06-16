@@ -183,6 +183,7 @@ On some Windows devices the app may fail to launch or experience subtle issues, 
 
 !!! warning "TODO"
 
+    - Add screenshots of where to find the app icon
     - Add a section for "Automatic updates" of the application
     - Add a section for "Autostart" (automatic startup) of the application
     - Link to the "Community" tab to join the Discord community in the "The app did not launch" section, in case the app still did not launch for the user
