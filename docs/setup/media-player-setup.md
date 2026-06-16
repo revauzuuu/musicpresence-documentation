@@ -205,4 +205,4 @@ If the media still does not show up after following the instructions for your me
     - Browser extension source code: https://github.com/ungive/media-control-extension/
     - Is there another way to show the Windows 10 media overlay than with media keys on the keyboard only?
 
-<!-- <script type="module" src="/_static/scripts/page/select-and-sync-os.js"></script> -->
+<script type="module" src="/_static/scripts/page/select-and-sync-os.js"></script>
