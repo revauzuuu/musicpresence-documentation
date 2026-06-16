@@ -45,7 +45,7 @@ For installation instructions, select your operating system by clicking the resp
     
     ---
 
-    Alternatively, you can download the ZIP archive {{ downloads.win_x64_zip.markdown.link }} instead. To run it, right-click and extract it, then double-click the **Music Presence** or **Music Presence.exe** file in the extracted folder. Note that the ZIP is [not fully standalone](../faq.md#is-the-windows-zip-fully-standalone) and there won't be any entry in the start menu like with the installer.
+    Alternatively, you can download the ZIP archive {{ downloads.win_x64_zip.markdown.link }} instead. To run it, right-click and extract it, then double-click the **Music Presence** or **Music Presence.exe** file in the extracted folder. Note that the ZIP is [not fully standalone](../troubleshooting/faqs.md#is-the-windows-zip-fully-standalone) and there won't be any entry in the start menu like with the installer.
 
 === ":fontawesome-brands-apple:&ensp;Mac"
 

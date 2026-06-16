@@ -21,4 +21,4 @@ tags:
     - To share the activity in large servers, they might need to also check the privacy settings of those specific servers
     - Music Presence does not need to be added as a game (at some point in the past this was necessary, but it is not anymore)
     - Related content:
-        - FAQ: [Can I show music above games in my Discord presence?](../faq.md#can-i-show-music-above-games-in-my-discord-presence)
+        - FAQ: [Can I show music above games in my Discord presence?](../troubleshooting/faqs.md#can-i-show-music-above-games-in-my-discord-status)
