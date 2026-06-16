@@ -47,7 +47,7 @@
 /* [Zensical] Various color scheme fixes (light mode). */
 :root > [data-md-color-scheme="default"] {
   --md-accent-fg-color: #415a4d;
-  --md-accent-fg-color--transparent: #84b99c44;
+  --md-accent-fg-color--transparent: #87b98444;
   --md-primary-fg-color: #456cd7;
   --md-code-bg-color: #f5f5f5;
   --md-code-fg-color: #363636;
