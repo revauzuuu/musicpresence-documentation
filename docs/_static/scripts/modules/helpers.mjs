@@ -31,7 +31,8 @@ export function selectTabbedSetTab(tabbedSet, tabNameInsensitive) {
     }
     const target = tabNameInsensitive.trim().toLowerCase();
     let opened = false;
-    if (tabbedSet.parentElement.tagName.toLowerCase() === 'details') {
+    if (tabbedSet.parentElement.tagName.toLowerCase() === 'details' &&
+        !tabbedSet.parentElement.hasAttribute('open')) {
         tabbedSet.parentElement.setAttribute('open', 'open');
         opened = true;
     }
