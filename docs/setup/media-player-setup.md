@@ -40,36 +40,36 @@ mark.pill:not([data-md-highlight]) {
     color: #444;
     font-weight: 500;
 }
-.media-player-configuration-table-sibling {
+.tabbed-set-table-next {
     display: none;
 }
-.media-player-configuration-table-sibling ~ .tabbed-set .tabbed-content {
+.tabbed-set-table-next + .tabbed-set .tabbed-content {
     padding: 0;
 }
-.media-player-configuration-table-sibling ~ .tabbed-set .tabbed-content .md-typeset__scrollwrap {
+.tabbed-set-table-next + .tabbed-set .tabbed-content .md-typeset__scrollwrap {
     margin: 0;
 }
-.media-player-configuration-table-sibling ~ .tabbed-set .tabbed-content .md-typeset__table {
+.tabbed-set-table-next + .tabbed-set .tabbed-content .md-typeset__table {
     padding: 0;
     margin-top: .25em;
     border-top: 0;
     margin-bottom: 0;
 }
-.media-player-configuration-table-sibling ~ .tabbed-set table {
+.tabbed-set-table-next + .tabbed-set table {
     border: 0;
     border-radius: 0 !important;
 }
-.media-player-configuration-table-sibling ~ .tabbed-set table thead {
+.tabbed-set-table-next + .tabbed-set table thead {
     display: none;
 }
-.media-player-configuration-table-sibling ~ .tabbed-set table {
+.tabbed-set-table-next + .tabbed-set table {
     background-color: transparent;
 }
-.media-player-configuration-table-sibling ~ .tabbed-set table tbody tr:hover {
+.tabbed-set-table-next + .tabbed-set table tbody tr:hover {
     background-color: transparent;
     box-shadow: none;
 }
-.media-player-configuration-table-sibling ~ .tabbed-set table tbody tr:nth-of-type(1) td {
+.tabbed-set-table-next + .tabbed-set table tbody tr:nth-of-type(1) td {
     border-top: 0;
 }
 img[src*="/logo-128.png"] {
@@ -119,7 +119,7 @@ If the media still does not show up after following the instructions for your me
 
 Make sure to select the correct operating system by clicking on the respective tab.
 
-<div class="media-player-configuration-table-sibling"></div>
+<div class="tabbed-set-table-next"></div>
 
 === ":fontawesome-brands-windows:&ensp;Windows"
 
