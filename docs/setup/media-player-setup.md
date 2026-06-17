@@ -280,5 +280,6 @@ If you do not have a GitHub account, you can join the [Discord server](https://g
     - Chrome Web Store page: TBD
     - Browser extension source code: https://github.com/ungive/media-control-extension/
     - Is there another way to show the Windows 10 media overlay than with media keys on the keyboard only?
+    - Explain how to even know, if a media player is detected. Not everyone might know that it will show up in the Music Presence tray menu, when media is playing
 
 <script type="module" src="/_static/scripts/page/select-and-sync-os.js"></script>
