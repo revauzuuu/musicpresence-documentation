@@ -19,7 +19,7 @@ tags:
 th:nth-child(1) {
     min-width: 0 !important;
 }
-th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
+th:nth-child(2), td:not([colspan="2"]) + td:nth-child(2) {
     padding-left: 0 !important;
 }
 table {
@@ -50,6 +50,7 @@ mark.pill:not([data-md-highlight]) {
     margin: 0;
 }
 .tabbed-set-table-next + .tabbed-set .tabbed-content .md-typeset__table {
+    display: flex;
     padding: 0;
     margin-top: .25em;
     border-top: 0;
@@ -182,15 +183,51 @@ Some media players are known to not report what they are playing or are known to
     |-|
     | *There are no media players with known issues on Linux.* |
 
+## Websites and browser support
+
+On Windows and Mac, you currently need to use the desktop application for the media player or streaming service you are using, as websites are not supported yet. The following table contains a list of supported official and third-party desktop applications.
+
+!!! info "Support for websites is coming soon"
+
+    Click "Subscribe" in the sidebar of [this GitHub issue](https://github.com/ungive/discord-music-presence/issues/5){ target="_blank" } to receive e-mail updates. Meanwhile, you can already install and test the [browser extension](https://github.com/ungive/media-control-extension#readme){ target="_blank" } that will enable browser support later.
+
+<div class="tabbed-set-table-next"></div>
+
+=== ":fontawesome-brands-windows:&ensp;Windows"
+
+    | Player || Instructions |
+    |-|-|-|
+    | ![](https://live.musicpresence.app/v3/icons/apple-music/logo-128.png) | <nobr class="desktop">Apple Music</nobr> | Install the Apple Music app from the [Microsoft Store](https://apps.microsoft.com/detail/9pfhdd62mxs1){ target="_blank" }. |
+    | ![](https://live.musicpresence.app/v3/icons/soundcloud/logo-128.png) | SoundCloud | Install the SoundCloud app from the [Microsoft Store](https://apps.microsoft.com/detail/9n5qr3kw6cmc){ target="_blank" }. |
+    | ![](https://live.musicpresence.app/v3/icons/youtube-music/logo-128.png) | <nobr class="desktop">YouTube Music</nobr> | ==Third-party=={ .pill } [Pear Desktop](https://github.com/pear-devs/pear-desktop){ target="_blank" } works well with Music Presence. |
+    | <nobr>![](https://live.musicpresence.app/v3/icons/spotify/logo-128.png)&ensp;![](https://live.musicpresence.app/v3/icons/tidal/logo-128.png)&ensp;![](https://live.musicpresence.app/v3/icons/amazon-music/logo-128.png)&ensp;![](https://live.musicpresence.app/v3/icons/deezer/logo-128.png)</nobr> { colspan=2 } | For these and other streaming services, download the desktop application from the official website. |
+
+=== ":fontawesome-brands-apple:&ensp;Mac"
+
+    | Player || Instructions |
+    |-|-|-|
+    | ![](https://live.musicpresence.app/v3/icons/apple-music/logo-128.png) | <nobr class="desktop">Apple Music</nobr> | Install the Apple Music app from the [App Store](https://apps.apple.com/app/apple-music/id1108187390){ target="_blank" }. |
+    | ![](https://live.musicpresence.app/v3/icons/soundcloud/logo-128.png) | SoundCloud | ==Third-party=={ .pill } [Nuage](https://github.com/lbrndnr/nuage-macos){ target="_blank" } is a third-party client for SoundCloud. |
+    | ![](https://live.musicpresence.app/v3/icons/youtube-music/logo-128.png) | <nobr class="desktop">YouTube Music</nobr> | ==Third-party=={ .pill } [Pear Desktop](https://github.com/pear-devs/pear-desktop){ target="_blank" } works well with Music Presence. |
+    | <nobr>![](https://live.musicpresence.app/v3/icons/spotify/logo-128.png)&ensp;![](https://live.musicpresence.app/v3/icons/tidal/logo-128.png)&ensp;![](https://live.musicpresence.app/v3/icons/amazon-music/logo-128.png)&ensp;![](https://live.musicpresence.app/v3/icons/deezer/logo-128.png)</nobr> { colspan=2 } | For these and other streaming services, download the desktop application from the official website. |
+
+=== ":custom-linux:&ensp;Linux"
+
+    | Player || Instructions |
+    |-|-|-|
+    | :custom-firefox:{ style="--md-icon-size: 2em; display: inline;" } | Firefox | Websites and streaming services can be detected when opened in Firefox or a Firefox-based browser, like LibreWolf or Zen Browser, if they are [supported](../media-players/index.md){ target="_blank" }. |
+    | ![](https://live.musicpresence.app/v3/icons/apple-music/logo-128.png) | <nobr class="desktop">Apple Music</nobr> | ==Third-party=={ .pill } [Sidra](https://github.com/wimpysworld/sidra){ target="_blank" } is a third-party client for Apple Music. |
+    | ![](https://live.musicpresence.app/v3/icons/deezer/logo-128.png) | Deezer | ==Third-party=={ .pill } [Deezer for Linux](https://github.com/aunetx/deezer-linux){ target="_blank" } is a third-party client for Deezer. |
+    | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | ==Third-party=={ .pill } [QBZ](https://github.com/vicrodh/qbz){ target="_blank" } is a third-party client for Qobuz. Unlike the official app for Windows and Mac, this client is fully compatible with Music Presence. |
+    | ![](https://live.musicpresence.app/v3/icons/spotify/logo-128.png) | Spotify | Download Spotify from [spotify.com/download/linux](https://www.spotify.com/download/linux){ target="_blank" }. |
+    | ![](https://live.musicpresence.app/v3/icons/tidal/logo-128.png) | TIDAL | ==Third-party=={ .pill } [Tidal Hi-Fi](https://github.com/Mastermindzh/tidal-hifi){ target="_blank" } and [High Tide](https://github.com/Nokse22/high-tide) are third-party clients for TIDAL. |
+    | ![](https://live.musicpresence.app/v3/icons/youtube-music/logo-128.png) | <nobr class="desktop">YouTube Music</nobr> | ==Third-party=={ .pill } [Pear Desktop](https://github.com/pear-devs/pear-desktop){ target="_blank" } is a third-party client for YouTube Music. |
+
 ## Multimedia and radio players
 
 [Discord Presence](../discord-presence/intro.md) is disabled by default for multimedia players, radio players and any other players that may report personal information or details about your location. You have to enable these explicitly, read [Player Controls](../discord-presence/player-controls.md) to find out how.
 
 ## Adding support for a media player
-
-!!! warning "TODO"
-
-## Browser support
 
 !!! warning "TODO"
 
