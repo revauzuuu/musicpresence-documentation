@@ -524,3 +524,8 @@ details.info summary::before {
     white-space: normal;
   }
 }
+
+/* [Zensical] Make admonition titles less bold. */
+.admonition-title {
+  font-weight: 650 !important;
+}
