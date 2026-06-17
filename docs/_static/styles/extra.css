@@ -29,7 +29,7 @@
   --md-text-font-family: "Inter", sans-serif;
   --md-code-font-family: "JetBrains Mono", monospace;
 }
-.md-header__title {
+.md-header__topic:not([data-md-component="header-topic"]) {
   font-family: "Nunito", sans-serif;
   /* Slightly increased font size, due to Nunito rendering rather small. */
   font-size: 15.25pt;
