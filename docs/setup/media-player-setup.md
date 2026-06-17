@@ -227,7 +227,7 @@ On Windows and Mac, you currently need to use the desktop application for the me
 
 ## Multimedia and radio players
 
-[Discord Presence](../discord-presence/intro.md) is disabled by default for multimedia players, radio players and any other players that may report personal information or details about your location. You have to enable these explicitly, read [Player Controls](../discord-presence/player-controls.md) to find out how.
+[Discord Presence](../discord-presence/intro.md) is disabled by default for multimedia players, radio players and any other media players that may report personal information or details about your location. You have to enable these explicitly, read [Player Controls](../discord-presence/player-controls.md) to find out how.
 
 ## Adding support for a media player
 
