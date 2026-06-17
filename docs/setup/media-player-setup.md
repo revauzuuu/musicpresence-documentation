@@ -107,6 +107,8 @@ If the media does not show up, refer to the [next section](#media-player-configu
     ![Windows 10 media overlay](/_static/media/media-controls-win-win10-dark.png#only-dark)
     ![Windows 10 media overlay](/_static/media/media-controls-win-win10-light.png#only-light)
 
+    If you don't have media keys on your keyboard, try [debugging your media player](#debugging-a-media-player).
+
 === ":fontawesome-brands-apple:&ensp;Mac"
 
     Click on the icon in the menu bar that is shown in the screenshot to see whether an application reports what it is playing.
