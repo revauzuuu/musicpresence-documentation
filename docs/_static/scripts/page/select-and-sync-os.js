@@ -39,39 +39,87 @@ function selectOSTabs() {
     }
 }
 
+function findParentWithClass(element, className) {
+    while (element) {
+        if (element.classList.contains(className)) {
+            return element;
+        }
+        element = element.parentElement;
+    }
+    return null;
+}
+
+function tabbedSetOfElement(element) {
+    return findParentWithClass(element, 'tabbed-set');
+}
+
 // Source: https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/#linked-tabs
 function syncOSTabs() {
     let autoClicks = 0;
-    const tabs = document.querySelectorAll(".tabbed-set > input")
-    for (const tab of tabs) {
-        tab.addEventListener("click", function () {
+    const tabInputs = document.querySelectorAll(".tabbed-set > input");
+    const tabbedSetHeightsByInputId = {};
+    for (const tabInput of tabInputs) {
+        const tabInputLabel = document.querySelector(`label[for=${tabInput.id}]`);
+        const updateTabbedSetHeights = function () {
+            for (const tabInput of tabInputs) {
+                const tabbedSet = tabbedSetOfElement(tabInput);
+                if (!tabbedSet) {
+                    console.error('No tabbed set for input element', tabInput);
+                    continue;
+                }
+                tabbedSetHeightsByInputId[tabInput.id] =
+                    tabbedSet.getBoundingClientRect().height;
+            }
+        };
+        tabInputLabel.addEventListener('mousedown', updateTabbedSetHeights);
+        tabInput.addEventListener("click", function () {
+            // console.log('CLICK', p, tabbedSetHeightsByInputId, tabbedSetOfElement(p).getBoundingClientRect().height);
             if (autoClicks > 0) {
                 autoClicks -= 1;
                 return;
             }
             setTimeout(function () {
-                const current = document.querySelector(`label[for=${tab.id}]`);
-                const pos = window.top;
+                const originalScrollY = window.scrollY;
+                const current = document.querySelector(`label[for=${tabInput.id}]`);
+                const currentRect = current.getBoundingClientRect();
                 const labelContent = current.innerText.trim();
                 const labels = document.querySelectorAll('.tabbed-set > label, .tabbed-alternate > .tabbed-labels > label');
-                const elementsToClick = [];
+                const inputIdsToClick = [];
                 for (const label of labels) {
                     if (label.getAttribute('for') === current.getAttribute('for')) {
                         continue;
                     }
                     if (label.innerText.trim() === labelContent) {
-                        elementsToClick.push(document.querySelector(`input[id=${label.getAttribute('for')}]`));
+                        const inputId = label.getAttribute('for');
+                        inputIdsToClick.push(inputId);
                     }
                 }
 
-                autoClicks += elementsToClick.length;
-                for (const element of elementsToClick) {
-                    element.click();
-                }
+                autoClicks += inputIdsToClick.length;
 
-                // Preserve scroll position
-                const delta = (current.getBoundingClientRect().top) - pos;
-                window.scrollBy(0, delta);
+                // Preserve scroll position of the clicked tabbed set.
+                let scrollDelta = 0;
+                for (const inputId of inputIdsToClick) {
+                    const input = document.querySelector(`input[id=${inputId}]`);
+                    input.click();
+                    const tabbedSet = tabbedSetOfElement(input);
+                    if (!tabbedSet) {
+                        console.error('No tabbed set for input element', tabInput);
+                        continue;
+                    }
+                    const tabbedSetRect = tabbedSet.getBoundingClientRect();
+                    if (tabbedSetRect.top < currentRect.top) {
+                        const oldHeight = tabbedSetHeightsByInputId[inputId];
+                        const newHeight = tabbedSet.getBoundingClientRect().height;
+                        scrollDelta += newHeight - oldHeight;
+                    }
+                }
+                window.scrollTo({
+                    top: originalScrollY + scrollDelta,
+                    behavior: 'instant',
+                });
+
+                updateTabbedSetHeights();
             }, 0);
         })
     }
