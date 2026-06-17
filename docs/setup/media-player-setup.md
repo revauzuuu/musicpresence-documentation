@@ -149,7 +149,7 @@ Make sure to select the correct operating system by clicking on the respective t
 
     | Player || Instructions |
     |:-:|-|-|
-    | ![](https://live.musicpresence.app/v3/icons/musicbee/logo-128.png) | MusicBee | If you run MusicBee under Wine, you can use [`mprisbee-bridge`](https://github.com/Kyletsit/mprisbee-bridge){ target="_blank" }. |
+    | ![](https://live.musicpresence.app/v3/icons/musicbee/logo-128.png) | MusicBee | If you run MusicBee under Wine, install the [`mb_MPRISBee`](https://github.com/UrbanCMC/mb_MPRISBee){ target="_blank" } plugin. |
 
 *[ToS]: Terms of Service
 
