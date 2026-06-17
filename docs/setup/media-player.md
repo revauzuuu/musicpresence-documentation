@@ -233,9 +233,9 @@ On Windows and Mac, you currently need to use the desktop application for the me
 
 If your media player is not detected, despite fulfilling the [minimum requirements](#minimum-requirements), support may not have been added yet. Follow these instructions to help:
 
-1. Open the [Music Presence](./installation.md){ target="_blank" } app
+1. Open the [Music Presence](./install.md){ target="_blank" } app
 2. Play something with your media player and let it play
-3. Click the <nobr>:custom-musicpresence: Music Presence</nobr> icon in your <span class="os-dependent-text" data-windows="tray menu" data-mac="menu bar" data-linux="system tray">tray menu</span>. [Where is this?](./installation.md#usage){ target="_blank" }
+3. Click the <nobr>:custom-musicpresence: Music Presence</nobr> icon in your <span class="os-dependent-text" data-windows="tray menu" data-mac="menu bar" data-linux="system tray">tray menu</span>. [Where is this?](./install.md#usage){ target="_blank" }
 4. Click on "Help" and then on "Submit detected media players"
 5. A GitHub issue opens. Submit it and you'll receive a reply within at most a few days
 

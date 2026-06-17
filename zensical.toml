@@ -14,9 +14,9 @@ nav = [
     {"Documentation" = [
         "index.md",
         {"Setup" = [
-            "setup/installation.md",
-            "setup/discord-settings.md",
-            "setup/media-player-setup.md",
+            "setup/install.md",
+            "setup/discord.md",
+            "setup/media-player.md",
         ]},
         {"Discord Presence" = [
             "discord-presence/intro.md",
