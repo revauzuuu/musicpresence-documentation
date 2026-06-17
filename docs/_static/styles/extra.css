@@ -263,10 +263,6 @@ body > .md-container {
   margin-bottom: 1.5em;
 }
 
-.md-header {
-  margin-top: .25em;
-}
-
 /* [Zensical] Make tabbed views more distinctive */
 div.tabbed-set {
   border-radius: .4rem !important;
