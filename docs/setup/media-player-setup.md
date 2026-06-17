@@ -122,7 +122,7 @@ Make sure to select the correct operating system by clicking on the respective t
 === ":fontawesome-brands-windows:&ensp;Windows"
 
     | Player || Instructions |
-    |:-:|-|-|
+    |-|-|-|
     | ![](https://live.musicpresence.app/v3/icons/aimp/logo-128.png) | AIMP | Install the [`Windows Media Control`](https://www.aimp.ru/forum/index.php?topic=63341){ target="_blank" } plugin. |
     | ![](https://live.musicpresence.app/v3/icons/feishin/logo-128.png) | Feishin | Switch to the web backend, then go to `Settings` -> `Hotkeys` and enable `Media Session`. Note that Music Presence can only identify Feishin as mpv, when you use the mpv backend. |
     | ![](https://live.musicpresence.app/v3/icons/foobar2000/logo-128.png) | foobar2000 | Install the [`foo_mediacontrol`](https://github.com/ungive/foo_mediacontrol){ target="_blank" } plugin. Click [Releases](https://github.com/ungive/foo_mediacontrol/releases/latest){ target="_blank" } to find all downloads. Alternatively you can also enable `Windows Universal Volume Control` under advanced preferences, but foobar2000 will not report the album name or the track duration then. |
@@ -137,14 +137,14 @@ Make sure to select the correct operating system by clicking on the respective t
 === ":fontawesome-brands-apple:&ensp;Mac"
 
     | Player || Instructions |
-    |:-:|-|-|
+    |-|-|-|
     | ![](https://live.musicpresence.app/v3/icons/itunes/logo-128.png) | iTunes | iTunes is not supported on Mac. Use Apple Music instead. |
     | ![](https://live.musicpresence.app/v3/icons/mpv/logo-128.png) | mpv | You must install and run mpv using an `.app` bundle. mpv cannot be detected when run as a plain binary from the command line. |
 
 === ":custom-linux:&ensp;Linux"
 
     | Player || Instructions |
-    |:-:|-|-|
+    |-|-|-|
     | ![](https://live.musicpresence.app/v3/icons/musicbee/logo-128.png) | MusicBee | If you run MusicBee under Wine, install the [`mb_MPRISBee`](https://github.com/UrbanCMC/mb_MPRISBee){ target="_blank" } plugin. |
 
 *[ToS]: Terms of Service
@@ -158,7 +158,7 @@ Some media players are known to not report what they are playing or are known to
 === ":fontawesome-brands-windows:&ensp;Windows"
 
     | Player || Instructions |
-    |:-:|-|-|
+    |-|-|-|
     | ![](https://live.musicpresence.app/v3/icons/amazon-music/logo-128.png) | <nobr class="desktop">Amazon Music</nobr> | Amazon Music does not report any album cover image and sometimes reports very inaccurate or scrambled song metadata. |
     | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing anymore since a past update. You can try [downgrading](https://github.com/ungive/discord-music-presence/issues/244#issuecomment-3556269025){ target="_blank" } or [patching](https://github.com/TubaApollo/qobuz-smtc){ target="_blank" } it (this may violate Qobuz ToS, use at your own risk). |
     | ![](https://live.musicpresence.app/v3/icons/tidal/logo-128.png) | TIDAL | TIDAL does not report the album name of the playing song. If the [TIDAL API](../discord-presence/music-apis.md) is enabled for [Discord Presence](../discord-presence/intro.md), the album name can only be guessed and may sometimes be incorrect. |
@@ -167,7 +167,7 @@ Some media players are known to not report what they are playing or are known to
 === ":fontawesome-brands-apple:&ensp;Mac"
 
     | Player || Instructions |
-    |:-:|-|-|
+    |-|-|-|
     | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing on Mac. |
 
 === ":custom-linux:&ensp;Linux"
