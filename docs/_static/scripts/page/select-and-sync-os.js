@@ -85,30 +85,38 @@ function syncOSTabs() {
                 const labelContent = current.innerText.trim();
                 const labels = document.querySelectorAll('.tabbed-set > label, .tabbed-alternate > .tabbed-labels > label');
                 const inputIdsToClick = [];
+                let scrollDelta = 0;
                 for (const label of labels) {
                     if (label.getAttribute('for') === current.getAttribute('for')) {
                         continue;
                     }
-                    if (label.innerText.trim() === labelContent) {
-                        const inputId = label.getAttribute('for');
-                        inputIdsToClick.push(inputId);
+                    if (label.innerText.trim() !== labelContent) {
+                        continue;
                     }
-                }
-
-                autoClicks += inputIdsToClick.length;
-
-                // Preserve scroll position of the clicked tabbed set.
-                let scrollDelta = 0;
-                for (const inputId of inputIdsToClick) {
+                    const inputId = label.getAttribute('for');
                     const input = document.querySelector(`input[id=${inputId}]`);
-                    input.click();
                     const tabbedSet = tabbedSetOfElement(input);
                     if (!tabbedSet) {
                         console.error('No tabbed set for input element', tabInput);
                         continue;
                     }
                     const tabbedSetRect = tabbedSet.getBoundingClientRect();
-                    if (tabbedSetRect.top < currentRect.top) {
+                    const isBefore = tabbedSetRect.top < currentRect.top;
+                    inputIdsToClick.push([inputId, isBefore]);
+                }
+
+                autoClicks += inputIdsToClick.length;
+
+                // Preserve scroll position of the clicked tabbed set.
+                for (const [inputId, isBefore] of inputIdsToClick) {
+                    const input = document.querySelector(`input[id=${inputId}]`);
+                    input.click();
+                    if (isBefore) {
+                        const tabbedSet = tabbedSetOfElement(input);
+                        if (!tabbedSet) {
+                            console.error('No tabbed set for input element', tabInput);
+                            continue;
+                        }
                         const oldHeight = tabbedSetHeightsByInputId[inputId];
                         const newHeight = tabbedSet.getBoundingClientRect().height;
                         scrollDelta += newHeight - oldHeight;
