@@ -93,7 +93,7 @@ For Music Presence to detect media playback, other applications must report info
 
 If the media does not show up, refer to the [next section](#media-player-configuration). Make sure you are playing something, paused media may not always appear.
 
-<h2 id="media-control-interfaces" class="anchor-target" style="transform: translateY(-2em);">Media control interfaces</h2>
+<h2 id="media-control-interfaces" class="anchor-target">Media control interfaces</h2>
 
 === ":fontawesome-brands-windows:&ensp;Windows"
 
