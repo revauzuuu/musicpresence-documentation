@@ -229,17 +229,17 @@ On Windows and Mac, you currently need to use the desktop application for the me
 
 ## Adding support for a media player
 
-!!! warning "TODO"
+## Resources
 
-## Debugging
-
-!!! warning "TODO"
-
-## Support ticket template
+### Debugging a media player
 
 !!! warning "TODO"
 
-## Information for developers
+### Support message template
+
+!!! warning "TODO"
+
+### Information for developers
 
 !!! warning "TODO"
 
