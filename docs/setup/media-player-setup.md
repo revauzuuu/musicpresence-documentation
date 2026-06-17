@@ -82,7 +82,7 @@ This guide covers how to set up Music Presence with your media player.
 
 ## Minimum requirements
 
-For Music Presence to detect media playback, other applications must report information about what media they are playing to your operating system. You can see whether other applications do this, by checking the [media control interface](#media-control-interfaces) of your device.
+For Music Presence to detect media playback, other applications must report information about what media they are playing to your operating system. You can see if other applications do this, by checking the [media control interface](#media-control-interfaces) of your device.
 
 If the media does not show up, refer to the [next section](#media-player-configuration). Make sure you are playing something, paused media may not always appear.
 
@@ -114,8 +114,6 @@ If the media does not show up, refer to the [next section](#media-player-configu
 ## Media player configuration
 
 Depending on the media player you are using, you may need to install a plugin, run a helper program or enable a specific setting. Refer to the table below for instructions.
-
-If the media still does not show up after following the instructions for your media player, support for it may not have been added yet. Refer to the [next section](#adding-support-for-a-media-player) for more information.
 
 Make sure to select the correct operating system by clicking on the respective tab.
 
