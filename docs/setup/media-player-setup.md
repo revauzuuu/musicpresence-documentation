@@ -130,7 +130,6 @@ Make sure to select the correct operating system by clicking on the respective t
     | ![](https://live.musicpresence.app/v3/icons/mpc-hc/logo-128.png) | MPC-HC | Under `Player` -> `User Interface` -> `Windows Integration` enable `Control via Windows UI (SMTC)`. If you don't have this setting, make sure to use this updated fork of MPC-HC: <nobr>[clsid2/mpc-hc](https://github.com/clsid2/mpc-hc){ target="_blank" }</nobr>. |
     | ![](https://live.musicpresence.app/v3/icons/mpv/logo-128.png) | mpv | mpv must either be run with the `--media-controls=yes` command line flag or by setting `media-controls=yes` in `mpv.conf`. |
     | ![](https://live.musicpresence.app/v3/icons/musicbee/logo-128.png) | MusicBee | Install the [`mb_MediaControl`](https://github.com/HenryPDT/mb_MediaControl){ target="_blank" } plugin. Click [Releases](https://github.com/HenryPDT/mb_MediaControl/releases/latest){ target="_blank" } to find all downloads. After importing it into MusicBee, make sure the information window shows version 1.0.4 or newer. |
-    | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing anymore since a past update. You can try [downgrading](https://github.com/ungive/discord-music-presence/issues/244#issuecomment-3556269025){ target="_blank" } or [patching](https://github.com/TubaApollo/qobuz-smtc){ target="_blank" } Qobuz (this may violate Qobuz ToS, use at your own risk). You can also try to [contact Qobuz](#support-ticket-template) to encourage them to fix it. |
     | ![](https://live.musicpresence.app/v3/icons/vlc/logo-128.png) | VLC |  Install the [`vlc-win10smtc`](https://github.com/spmn/vlc-win10smtc){ target="_blank" } plugin. |
     | ![](https://live.musicpresence.app/v3/icons/winamp/logo-128.png) | Winamp | Install the [`gen_smtc`](https://github.com/NanMetal/gen_smtc){ target="_blank" } plugin. |
     | ![](https://live.musicpresence.app/v3/icons/windows-media-player-legacy/logo-128.png) | Windows Media Player Legacy | [`Windows-Media-Player-Discord-RPC`](https://github.com/T0biasCZe/Windows-Media-Player-Discord-RPC){ target="_blank" } is a 2-in-1 program that allows Windows Media Player to be detected by Music Presence while it's running and also provides its own Discord RPC implementation. |
@@ -141,7 +140,6 @@ Make sure to select the correct operating system by clicking on the respective t
     |:-:|-|-|
     | ![](https://live.musicpresence.app/v3/icons/itunes/logo-128.png) | iTunes | iTunes is not supported on Mac. Use Apple Music instead. |
     | ![](https://live.musicpresence.app/v3/icons/mpv/logo-128.png) | mpv | You must install and run mpv using an `.app` bundle. mpv cannot be detected when run as a plain binary from the command line. |
-    | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing on Mac. |
 
 === ":custom-linux:&ensp;Linux"
 
@@ -150,6 +148,33 @@ Make sure to select the correct operating system by clicking on the respective t
     | ![](https://live.musicpresence.app/v3/icons/musicbee/logo-128.png) | MusicBee | If you run MusicBee under Wine, install the [`mb_MPRISBee`](https://github.com/UrbanCMC/mb_MPRISBee){ target="_blank" } plugin. |
 
 *[ToS]: Terms of Service
+
+## Media players with known issues
+
+Some media players are known to not report what they are playing or are known to report inaccurate information. If you use one of these players, consider [contacting the developer](#support-ticket-template) of that media player, so they can improve its integration with the system.
+
+<div class="tabbed-set-table-next"></div>
+
+=== ":fontawesome-brands-windows:&ensp;Windows"
+
+    | Player || Instructions |
+    |:-:|-|-|
+    | ![](https://live.musicpresence.app/v3/icons/amazon-music/logo-128.png) | Amazon Music | Amazon Music does not report any album cover image and sometimes reports very inaccurate or scrambled song metadata. |
+    | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing anymore since a past update. You can try [downgrading](https://github.com/ungive/discord-music-presence/issues/244#issuecomment-3556269025){ target="_blank" } or [patching](https://github.com/TubaApollo/qobuz-smtc){ target="_blank" } it (this may violate Qobuz ToS, use at your own risk). |
+    | ![](https://live.musicpresence.app/v3/icons/tidal/logo-128.png) | TIDAL | TIDAL does not report the album name of the playing song. If the [TIDAL API](../discord-presence/music-apis.md) is enabled, the album name can only be guessed and may sometimes be incorrect. |
+    | ![](https://live.musicpresence.app/v3/icons/windows-media-player/logo-128.png) | Windows Media Player | Windows Media Player sometimes does not report any album cover image and tends to stop reporting what it is playing after playing a few songs. |
+
+=== ":fontawesome-brands-apple:&ensp;Mac"
+
+    | Player || Instructions |
+    |:-:|-|-|
+    | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing on Mac. |
+
+=== ":custom-linux:&ensp;Linux"
+
+    ||
+    |-|
+    | *There are no media players with known issues on Linux.* |
 
 ## Adding support for a media player
 
