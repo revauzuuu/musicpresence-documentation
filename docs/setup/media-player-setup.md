@@ -176,11 +176,11 @@ Some media players are known to not report what they are playing or are known to
     |-|
     | *There are no media players with known issues on Linux.* |
 
+## Multimedia and radio players
+
+[Discord Presence](../discord-presence/intro.md) is disabled by default for multimedia players, radio players and any other players that may report personal information or details about your location. You have to enable these explicitly, read [Player Controls](../discord-presence/player-controls.md) to find out how.
+
 ## Adding support for a media player
-
-!!! warning "TODO"
-
-## Multimedia players
 
 !!! warning "TODO"
 
