@@ -27,7 +27,7 @@ table {
 }
 mark.pill:not([data-md-highlight]) {
     border-radius: 1em;
-    padding: 1pt 4pt;
+    padding: 1pt 6pt;
     margin-right: .25em;
     margin-left: -.25em;
 }
