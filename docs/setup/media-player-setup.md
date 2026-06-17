@@ -160,7 +160,7 @@ Make sure to select the correct operating system by clicking on the respective t
 
 ## Media players with known issues
 
-Some media players are known to not report what they are playing or are known to report inaccurate information. If you use one of these players, consider [contacting the developer](#support-ticket-template) of that media player, so they can improve its integration with the system.
+Some media players are known to not report what they are playing or are known to report inaccurate information. If you use one of these players, consider [contacting the developer](#support-message-template) of that media player, so they can improve its integration with the system.
 
 <div class="tabbed-set-table-next"></div>
 
