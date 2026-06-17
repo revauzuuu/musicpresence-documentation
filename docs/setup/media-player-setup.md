@@ -80,6 +80,12 @@ img[src*="/logo-128.png"] {
 
 This guide covers how to set up Music Presence with your media player.
 
+## Supported media players
+
+Check the list of [supported media players](../media-players/index.md){ target="_blank" }, to know if your media player is supported.
+
+If your media player is not listed, then follow the [instructions](#adding-support-for-a-media-player) below on how you can help with adding support for it to Music Presence.
+
 ## Minimum requirements
 
 For Music Presence to detect media playback, other applications must report information about what media they are playing to your operating system. You can see if other applications do this, by checking the [media control interface](#media-control-interfaces) of your device.
