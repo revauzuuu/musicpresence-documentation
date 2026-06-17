@@ -159,9 +159,9 @@ Some media players are known to not report what they are playing or are known to
 
     | Player || Instructions |
     |:-:|-|-|
-    | ![](https://live.musicpresence.app/v3/icons/amazon-music/logo-128.png) | Amazon Music | Amazon Music does not report any album cover image and sometimes reports very inaccurate or scrambled song metadata. |
+    | ![](https://live.musicpresence.app/v3/icons/amazon-music/logo-128.png) | <nobr class="desktop">Amazon Music</nobr> | Amazon Music does not report any album cover image and sometimes reports very inaccurate or scrambled song metadata. |
     | ![](https://live.musicpresence.app/v3/icons/qobuz/logo-128.png) | Qobuz | Qobuz does not report what it is playing anymore since a past update. You can try [downgrading](https://github.com/ungive/discord-music-presence/issues/244#issuecomment-3556269025){ target="_blank" } or [patching](https://github.com/TubaApollo/qobuz-smtc){ target="_blank" } it (this may violate Qobuz ToS, use at your own risk). |
-    | ![](https://live.musicpresence.app/v3/icons/tidal/logo-128.png) | TIDAL | TIDAL does not report the album name of the playing song. If the [TIDAL API](../discord-presence/music-apis.md) is enabled, the album name can only be guessed and may sometimes be incorrect. |
+    | ![](https://live.musicpresence.app/v3/icons/tidal/logo-128.png) | TIDAL | TIDAL does not report the album name of the playing song. If the [TIDAL API](../discord-presence/music-apis.md) is enabled for [Discord Presence](../discord-presence/intro.md), the album name can only be guessed and may sometimes be incorrect. |
     | ![](https://live.musicpresence.app/v3/icons/windows-media-player/logo-128.png) | Windows Media Player | Windows Media Player sometimes does not report any album cover image and tends to stop reporting what it is playing after playing a few songs. |
 
 === ":fontawesome-brands-apple:&ensp;Mac"

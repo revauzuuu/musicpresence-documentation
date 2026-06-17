@@ -518,3 +518,9 @@ details.info summary::before {
   margin-top: 1.5em !important;
   margin-bottom: 1.5em !important;
 }
+
+@media (max-width: 27.5em) {
+  nobr.desktop {
+    white-space: normal;
+  }
+}
