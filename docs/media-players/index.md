@@ -16,6 +16,10 @@ tags:
 }
 </style>
 
+<script>
+window.location.href = "https://go.musicpresence.app/supported-media-players";
+</script>
+
 !!! warning "TODO"
 
     Move the supported media players list here or reimplement it: https://nimigames68.github.io/Music-Presence-Players/
