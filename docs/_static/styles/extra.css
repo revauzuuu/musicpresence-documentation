@@ -516,3 +516,9 @@ not allow the user to select the text.*/
 details.info summary::before {
   background-color: #448aff !important;
 }
+
+/* [Zensical] Give tables a slightly larger top and bottom margin. */
+.tabbed-set {
+  margin-top: 1.5em !important;
+  margin-bottom: 1.5em !important;
+}
