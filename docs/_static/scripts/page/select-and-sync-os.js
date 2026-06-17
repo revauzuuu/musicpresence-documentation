@@ -53,8 +53,38 @@ function tabbedSetOfElement(element) {
     return findParentWithClass(element, 'tabbed-set');
 }
 
+function prepareOsDependents() {
+    for (const element of document.querySelectorAll('.os-dependent-text')) {
+        ["windows", "mac", "linux"].forEach(function (os) {
+            const attribute = 'data-' + os;
+            console.log(attribute, element.getAttribute(attribute));
+            if (!element.hasAttribute(attribute) ||
+                element.getAttribute(attribute).length === 0) {
+                element.setAttribute(attribute, element.innerText);
+            }
+        });
+    }
+}
+
+function getOsDependents() {
+    return document.querySelectorAll('.os-dependent-text');
+}
+
+function updateOsDependents(tabId) {
+    const label = document.querySelector('label[for="' + tabId + '"]');
+    const os = label.innerText.trim().toLowerCase();
+    for (const element of getOsDependents()) {
+        const value = element.getAttribute('data-' + os);
+        console.log(value, element);
+        if (value && typeof value === "string" && value.length > 0) {
+            element.innerText = value;
+        }
+    }
+}
+
 // Source: https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/#linked-tabs
-function syncOSTabs() {
+function syncOsTabsAndDependents() {
+    prepareOsDependents();
     let autoClicks = 0;
     const tabInputs = document.querySelectorAll(".tabbed-set > input");
     const tabbedSetHeightsByInputId = {};
@@ -83,6 +113,7 @@ function syncOSTabs() {
                 const current = document.querySelector(`label[for=${tabInput.id}]`);
                 const currentRect = current.getBoundingClientRect();
                 const labelContent = current.innerText.trim();
+                const os = labelContent.toLowerCase();
                 const labels = document.querySelectorAll('.tabbed-set > label, .tabbed-alternate > .tabbed-labels > label');
                 const inputIdsToClick = [];
                 let scrollDelta = 0;
@@ -107,6 +138,13 @@ function syncOSTabs() {
 
                 autoClicks += inputIdsToClick.length;
 
+                const osDependents = [];
+                for (const element of getOsDependents()) {
+                    const rect = element.getBoundingClientRect();
+                    const isBefore = rect.top < currentRect.top;
+                    osDependents.push([element, isBefore]);
+                }
+
                 // Preserve scroll position of the clicked tabbed set.
                 for (const [inputId, isBefore] of inputIdsToClick) {
                     const input = document.querySelector(`input[id=${inputId}]`);
@@ -122,6 +160,19 @@ function syncOSTabs() {
                         scrollDelta += newHeight - oldHeight;
                     }
                 }
+                for (const [element, isBefore] of osDependents) {
+                    const value = element.getAttribute('data-' + os);
+                    if (value && typeof value === "string" && value.length > 0) {
+                        if (isBefore) {
+                            const oldHeight = element.parentElement.getBoundingClientRect().height;
+                            element.innerText = value;
+                            const newHeight = element.parentElement.getBoundingClientRect().height;
+                            scrollDelta += newHeight - oldHeight;
+                        } else {
+                            element.innerText = value;
+                        }
+                    }
+                }
                 window.scrollTo({
                     top: originalScrollY + scrollDelta,
                     behavior: 'instant',
@@ -133,32 +184,12 @@ function syncOSTabs() {
     }
 }
 
-function syncOSDependents() {
-    const tabs = document.querySelectorAll(".tabbed-set > input")
-    for (const tab of tabs) {
-        tab.addEventListener("click", function () {
-            const tabId = tab.id;
-            const label = document.querySelector('label[for="' + tabId + '"]');
-            const os = label.innerText.trim().toLowerCase();
-            for (const element of document.querySelectorAll('.os-dependent-text')) {
-                const value = element.getAttribute('data-' + os);
-                if (value && typeof value === "string" && value.length > 0) {
-                    element.innerText = value;
-                }
-            }
-        });
-    }
-}
-
 function init () {
-    // Sync anything that depends on the currently selected OS.
-    syncOSDependents();
-
     // Select the correct OS tabs on load.
     selectOSTabs();
 
-    // Sync OS tabs across the page.
-    syncOSTabs();
+    // Sync OS tabs and dependents across the page.
+    syncOsTabsAndDependents();
 }
 
 document$.subscribe(function () {
