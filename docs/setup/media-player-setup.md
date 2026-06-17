@@ -25,17 +25,17 @@ th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
 table {
     border-radius: 1em !important;
 }
-mark:not([data-md-highlight]) {
+mark.pill:not([data-md-highlight]) {
     border-radius: 1em;
     padding: 1pt 4pt;
     margin-right: .25em;
     margin-left: -.25em;
 }
-[data-md-color-scheme="slate"] mark:not([data-md-highlight]) {
+[data-md-color-scheme="slate"] mark.pill:not([data-md-highlight]) {
     background-color: #323232 !important;
     color: #bbb;
 }
-[data-md-color-scheme="default"] mark:not([data-md-highlight]) {
+[data-md-color-scheme="default"] mark.pill:not([data-md-highlight]) {
     background-color: #eaeaea !important;
     color: #444;
     font-weight: 500;
@@ -90,12 +90,12 @@ If the media does not show up, refer to the [next section](#media-player-configu
 
 === ":fontawesome-brands-windows:&ensp;Windows"
 
-    ==Windows 11== Click on the section on the right of your task bar that is highlighted in the screenshot to see whether an application reports what it is playing.
+    ==Windows 11=={ .pill } Click on the section on the right of your task bar that is highlighted in the screenshot to see whether an application reports what it is playing.
     
     ![Windows 11 media controls](/_static/media/media-controls-win-win11-dark.png#only-dark)
     ![Windows 11 media controls](/_static/media/media-controls-win-win11-light.png#only-light)
 
-    ==Windows 10== Press a media key on your keyboard to see the information overlay.
+    ==Windows 10=={ .pill } Press a media key on your keyboard to see the information overlay.
 
     ![Windows 10 media overlay](/_static/media/media-controls-win-win10-dark.png#only-dark)
     ![Windows 10 media overlay](/_static/media/media-controls-win-win10-light.png#only-light)
