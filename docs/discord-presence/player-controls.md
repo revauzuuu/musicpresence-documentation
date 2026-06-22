@@ -22,4 +22,4 @@ It is also possible to toggle enabled players in Music Presence's settings ("Dis
 
 ![Example of toggled players](/_static/media/toggle-presence-per-app.png)
 
-!!! warning "Multimedia and radio players are disabled by default since they could leak sensitive or personal information. They have to be explicitly enabled by the user."
+!!! info "Multimedia and radio players are disabled by default since they could leak sensitive or personal information. They must be explicitly enabled by the user."
