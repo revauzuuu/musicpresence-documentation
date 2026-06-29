@@ -15,7 +15,14 @@ tags:
 
     Show the table of contents, if it's helpful.
 
-!!! note "Content notes"
-    - Mention that the Spotify API is heavily restricted. It requires a custom API key and a Spotify Premium subscription, even with a custom API key (iirc)
-    - ...
+## Spotify API
 
+!!! warning "TODO"
+    Explain how to create a Spotify application in the Developer Dashboard and enter the credentials in the app (with screenshots)
+
+!!! note "Content notes"
+    - Since a recent Spotify API change, the Spotify API requires Spotify Premium
+    - Music Presence does not come with its own bundled Spotify API credentials anymore
+    - The user needs to create their own Spotify application and enter the credentials
+
+---
