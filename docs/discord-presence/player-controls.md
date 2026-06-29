@@ -8,14 +8,18 @@ tags:
     - Discord Presence
 ---
 
-!!! Warning "TODO"
-    Explain how the user can toggle the presence per player.
+# Player Controls
 
-    Contribution guide: https://github.com/music-presence/documentation#contributing
+This guide covers controlling your players' Discord Presence.
 
-    Show the table of contents, if it's helpful.
+## Toggling presence per application
 
-!!! note "Content notes"
-    - Multimedia players and radio players are disabled by default since they could leak sensitive or personal information. They have to be enabled explicitly by the user
-    - Media players can be toggled in the tray menu of the application
-    - Media players can also be toggled in the settings of the app ("Discord" in 2.3.5, "Discord > Settings" in 2.4.0)
+You can toggle your players on and off from Music Presence's tray menu:
+
+![Example of tray menu toggling](/_static/media/toggle-presence-from-tray-menu.png)
+
+It is also possible to toggle enabled players in Music Presence's settings ("Discord" in 2.3.5, "Discord > Settings" in 2.4.0):
+
+![Example of toggled players](/_static/media/toggle-presence-per-app.png)
+
+!!! info "Multimedia and radio players are disabled by default since they could leak sensitive or personal information. They must be explicitly enabled by the user."
